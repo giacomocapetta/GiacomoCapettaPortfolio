@@ -1,0 +1,17 @@
+body { 
+  text-align: center;
+  background-image: linear-gradient(to top right, #FFFFFF 0%, #DF15AA 50%, #AACFEF 100%);
+  max-width: 100%;
+  height: auto}
+h1 {
+  color: blue;
+}
+p {
+  color: green;
+}
+
+#immagine{
+  max-width: 40%;
+  height: auto;
+}
+
