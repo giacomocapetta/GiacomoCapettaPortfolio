@@ -1,18 +1,9 @@
-body { 
-  text-align: center;
-  background-image: linear-gradient(to top right, #FFFFFF 0%, #DF15AA 50%, #AACFEF 100%);
-  max-width: 100%;
-  height: auto}
-h1 {
-  color: blue;
-}
-p {
-  color: green;
-}
-
-#barraup{
-  text-align: center;
-  max-width: 40%;
-  height: auto;
-}
-
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
