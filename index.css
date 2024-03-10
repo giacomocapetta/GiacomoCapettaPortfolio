@@ -3,3 +3,50 @@ body {
  background: linear-gradient(to top right, #ff9100,#ffffff)
   }
 */
+/* Stile per assicurarsi che il logo e il menu toggle rimangano sulla stessa linea */
+.navbar-brand, .navbar-toggler {
+  flex-grow: 1; /* Permette agli elementi di espandersi equamente */
+}
+
+.navbar-toggler {
+  flex-grow: 0; /* Impedisce al toggler di espandersi oltre il necessario */
+  text-align: right; /* Allinea il toggler a destra */
+}
+
+/* Questo impedisce al testo del menu di espandersi oltre il necessario, mantenendolo compatto */
+.navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+
+/* Media query per gestire layout specifici a seconda della dimensione dello schermo */
+@media (max-width: 576px) { /* Ad esempio, per schermi molto piccoli, potresti voler ridurre il padding o la dimensione del logo */
+  .navbar-brand img {
+      max-width: 40px; /* Riduce la dimensione del logo */
+      height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+      margin-right: 10px; /* Riduce lo spazio tra gli elementi del menu */
+    
+    }
+}
+@media (max-width: 992px) { /* Questo esempio usa 992px come punto di rottura per i dispositivi grandi, ma puoi adattarlo alle tue esigenze */
+  .navbar-brand img {
+      max-width: 20px; /* Limita la larghezza massima del logo al 5% dello schermo */
+      height: auto; /* Mantiene l'aspect ratio */
+  }
+}
+
+
+@media (min-width: 992px) { /* Questo esempio usa 992px come punto di rottura per i dispositivi grandi, ma puoi adattarlo alle tue esigenze */
+  .navbar-brand img {
+      max-width: 40px; /* Limita la larghezza massima del logo al 5% dello schermo */
+      height: auto; /* Mantiene l'aspect ratio */
+     
+  }
+  
+}
