@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html lang="it">
-
+<html lang="en">
 <head>
-    <head>
-        <title>Leda</title>
-        <link rel="stylesheet" href="1.css">
-      </head>
-      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio di [Tuo Nome]</title>
+
+    <!-- Collegamento ai file di stile di Bootstrap (assicurati di avere una connessione internet per i link CDN) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-
 <body>
-  <h1>Intestazione</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet hendrerit neque sed sagittis.
-    Donec sodales pharetra convallis. Morbi sagittis orci vel erat cursus, et pretium risus porttitor.</p>
-</body>
 
+<!-- Barra di navigazione -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        Giacomo Capetta
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Progetti</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contatti</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contenuto principale -->
+<div class="container mt-3">
+    <div class="row">
+        <!-- Immagine sulla sinistra -->
+        <div class="col-md-6">
+            <img src="link-all'immagine.jpg" class="img-fluid" alt="Immagine del portfolio">
+        </div>
+        <!-- Testo a destra -->
+        <div class="col-md-6">
+            <h2>Benvenuto nel mio portfolio!</h2>
+            <p>
+                Descrizione del tuo portfolio e del tuo approccio creativo. Puoi aggiungere ulteriori dettagli e informazioni sui tuoi progetti qui.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Collegamento ai file JavaScript di Bootstrap (assicurati di avere una connessione internet per i link CDN) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
 </html>
