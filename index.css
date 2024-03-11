@@ -5,3 +5,7 @@ body {
 p.lead { 
     font-size: medium;
 }
+
+#forma{
+    position:absolute;
+}
