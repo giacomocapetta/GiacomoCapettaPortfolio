@@ -1,39 +1,180 @@
-body { 
-    background-color:  background: hsla(230, 59%, 25%, 1);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-    background: linear-gradient(90deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
-    
-    background: -moz-linear-gradient(90deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
-    
-    background: -webkit-linear-gradient(90deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1a2766", endColorstr="#ae1b1e", GradientType=1 );
-
+* {  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-p.lead { 
-    font-size: medium;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(0deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
+    background-size: cover;
+    background-position: center;
 }
 
-#forma{
-    position:absolute;
+.logo {
+    position: absolute;
+    left: 20px;
+    width: 100px;
+    cursor: pointer;
 }
 
-.container-or-carousel {
+li, a, button {
+    font-weight: 600;
+    font-size: 16px;
+    color: bisque;
+    text-decoration: none;
+}
+
+header {
+    background-color: #002423;
     display: flex;
-    justify-content: center; /* Centra i figli orizzontalmente */
-    padding-top: 10%;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 2px 2px 10px black;
 }
 
-.carousel-item img {
-    max-width: 90%; 
-    margin: auto;
-    display: block;
-    padding-left: 10%;
-    padding-right: 10%;
+header:hover {
+    box-shadow: 2px 2px 25px black;
+    transition: 0.5s;
 }
-.carousel-caption {
-    position: static;
-    padding-top: 20%; /* Aggiunge spazio sopra la caption */
-    color: #000; /* Colore del testo, cambialo secondo necessità */
-  }
+
+.navlinks li {
+    display: inline-block;
+    margin: 30px;
+    align-items: center;
+}
+
+.navlinks li a:hover {
+    color: tomato;
+    text-shadow: 1px 1px 5px black;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: firebrick;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: none;
+    z-index: 999;
+}
+
+button:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(1px);
+    box-shadow: -3px 0 10px black;
+    display: none;
+    justify-content: flex-start;
+    list-style: none;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+
+.sidebar li {
+    width: 100%;
+    margin: 25px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.sidebar img {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 120px;
+}
+
+nav ion-icon {
+    font-size: 2em;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+
+h2 {
+    color: wheat;
+    text-shadow: #002423 -2px 2px 10px;
+    font-size: 2em;
+    margin: 20%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 830px) {
+    .navlinks ion-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .navlinks .items {
+        display: none;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#io {
+    margin: 0;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 50%;
+    height: auto;
+}
+
+#testo-hero {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 830px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #io {
+        margin: 0;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 30%;
+        height: auto;
+    }
+
+    #testo-hero {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+        height: auto;
+    }
+}
