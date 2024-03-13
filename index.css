@@ -1,5 +1,14 @@
 body { 
-    background-color: aquamarine;
+    background-color:  background: hsla(230, 59%, 25%, 1);
+
+    background: linear-gradient(90deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1a2766", endColorstr="#ae1b1e", GradientType=1 );
+
 }
 
 p.lead { 
@@ -9,3 +18,22 @@ p.lead {
 #forma{
     position:absolute;
 }
+
+.container-or-carousel {
+    display: flex;
+    justify-content: center; /* Centra i figli orizzontalmente */
+    padding-top: 10%;
+}
+
+.carousel-item img {
+    max-width: 90%; 
+    margin: auto;
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.carousel-caption {
+    position: static;
+    padding-top: 20%; /* Aggiunge spazio sopra la caption */
+    color: #000; /* Colore del testo, cambialo secondo necessità */
+  }
