@@ -124,6 +124,7 @@ h2 {
     .navlinks .items {
         display: none;
     }
+
     @media only screen and (max-width: 560px) {
       .navlinks .items {
           display: none;
