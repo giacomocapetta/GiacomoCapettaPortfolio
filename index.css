@@ -144,11 +144,10 @@ nav ion-icon {
     justify-content: center;
     padding: 5%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    text-align: center;
     align-items: center;
 }
-
-
 
 #chi-sono{
   display: flex;
@@ -159,23 +158,20 @@ nav ion-icon {
 
 }
 #info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-#fotome {
-display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 10%;   
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
 }
 #fotomeme {
-    max-height: 300px;
-    width: auto;    
+    margin: 0;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 70%;
+    height: auto;
+    padding-bottom: 10%;  
 }
 #info p {
     padding-top: 10%;
@@ -190,13 +186,12 @@ display: flex;
     margin-right: 5%;
 }
 #testo-chi-sono {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 5%;
+    display: flex;
+    flex-direction: column; 
     text-align: center;
-    margin: 40px;
-    padding-top: 5%;
+    align-items: center;
 }
 #rect-blu{
     display: flex;
@@ -274,6 +269,15 @@ h1 {
         padding-top: 20%;
 
     }
+    .linea-verticale {
+        width: 70%; /* Spessore della linea */
+        height: 2PX;/* Altezza della linea */
+        background-color: #000; /* Colore della linea */
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 5%; /* Spazio a sinistra della linea */
+        margin-right: 5%;
+    }
     #testo-chi-sono {
         padding-top: 5%;
         display: flex;
@@ -281,6 +285,23 @@ h1 {
         justify-content: center;
         align-items: center;
         max-width: 70%;
-        height: auto;}
+        height: auto;
+    }
+    #rect-blu {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        height: auto;
+        width: fit-content;
+        margin-top: 10%;
+        border-radius: 20px;
+    }
+    #lista {
+        display:flex;
+        flex-direction: column;
+        margin: 30px;
+        align-items: center;
+        justify-content: flex-start;
+    }
         
 }
