@@ -12,6 +12,11 @@ body {
     background-size: cover;
     background-position: center;
 }
+h3 {
+    padding-bottom: 15%;
+    padding-top: 10%;
+}
+
 
 .logo {
     position: absolute;
@@ -147,6 +152,7 @@ nav ion-icon {
     flex-direction: column; 
     text-align: center;
     align-items: center;
+    line-height: 2;
 }
 
 #chi-sono{
@@ -155,7 +161,7 @@ nav ion-icon {
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
-
+  padding: 5%;
 }
 #info {
     justify-content: center;
@@ -163,18 +169,17 @@ nav ion-icon {
     flex-direction: column; 
     text-align: center;
     align-items: center;
+    padding-left: 2%;
 }
 #fotomeme {
     margin: 0;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 10%;
     max-width: 70%;
     height: auto;
     padding-bottom: 10%;  
 }
 #info p {
-    padding-top: 10%;
+    line-height: 5;
 }
 .linea-verticale {
     width: 2px; /* Spessore della linea */
@@ -182,46 +187,46 @@ nav ion-icon {
     background-color: #000; /* Colore della linea */
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 5%; /* Spazio a sinistra della linea */
-    margin-right: 5%;
+    margin-left: 3%; /* Spazio a sinistra della linea */
+    margin-right: 3%;
 }
 #testo-chi-sono {
     justify-content: center;
-    padding: 5%;
     display: flex;
     flex-direction: column; 
     text-align: center;
     align-items: center;
+    line-height: valore;
+
+}
+#testo-chi-sono p{
+    line-height: 2;
 }
 #rect-blu{
     display: flex;
     flex-direction: row;
-    background-color: #000;
+    background-color: black;
     height: auto;
     width: fit-content;
     margin-top: 10%;
     border-radius: 20px;
 }
-#lista {
-    display:flex;
-    flex-direction: row;
-    margin: 30px;
-    align-items: center;
-    justify-content: flex-start;
-}
-#lista li {
-    display:flex;
+
+.voti {
+    display: flex;
     flex-direction: column;
-    margin: 30px;
+    padding: 4%;
     align-items: center;
+    text-align: center;
 }
-h3 {
-    padding-bottom: 15%;
-    padding-top: 10%;
+.img-list, .stelle {
+    max-width: 100%;
+    height: auto;
 }
-h1 {
-    padding: 5%;
+.list-text {
+    color: aliceblue;
 }
+
 @media only screen and (max-width: 768px) {
     .container {
         display: flex;
@@ -273,8 +278,8 @@ h1 {
         width: 70%; /* Spessore della linea */
         height: 2PX;/* Altezza della linea */
         background-color: #000; /* Colore della linea */
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 5%;
+        margin-bottom: 5%;
         margin-left: 5%; /* Spazio a sinistra della linea */
         margin-right: 5%;
     }
@@ -287,21 +292,100 @@ h1 {
         max-width: 70%;
         height: auto;
     }
-    #rect-blu {
+    .voti {
         display: flex;
         flex-direction: column;
-        background-color: #000;
-        height: auto;
-        width: fit-content;
-        margin-top: 10%;
-        border-radius: 20px;
-    }
-    #lista {
-        display:flex;
-        flex-direction: column;
-        margin: 30px;
+        padding: 4%;
         align-items: center;
-        justify-content: flex-start;
+        text-align: center;
     }
-        
+    .img-list, .stelle {
+        max-width: 50%;
+        height: auto;
+    }
+    .list-text {
+        color: aliceblue;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    #io {
+        margin: 0;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 50%;
+        height: auto;
+    }
+
+    #testo-hero {
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+        height: auto;
+    } 
+    #chi-sono{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+
+    }
+    #fotome {
+        display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;   
+        }
+    #fotomeme{
+        max-width: 200px;
+        height: auto;
+        padding-top: 20%;
+
+    }
+    .linea-verticale {
+        width: 70%; /* Spessore della linea */
+        height: 2PX;/* Altezza della linea */
+        background-color: #000; /* Colore della linea */
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%; /* Spazio a sinistra della linea */
+        margin-right: 5%;
+    }
+    #testo-chi-sono {
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+        height: auto;
+    }
+    .voti {
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+        align-items: center;
+        text-align: center;
+    }
+    .img-list, .stelle {
+        max-width: 30%;
+        height: auto;
+    }
+    .list-text {
+        color: aliceblue;
+        font-size: 8pt;
+    
+    }
 }
