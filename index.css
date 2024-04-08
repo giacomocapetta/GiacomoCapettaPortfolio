@@ -1,23 +1,29 @@
+/* Importazione del font Montserrat da Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* Reset dei margini e del padding per tutti gli elementi */
 * {  
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Stile del body */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Utilizzo del font Montserrat */
+    /* Background con gradiente lineare */
     background: linear-gradient(0deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Ridimensionamento del background */
+    background-position: center; /* Posizionamento del background al centro */
 }
+
+/* Stile degli elementi h3 */
 h3 {
     padding-bottom: 15%;
     padding-top: 10%;
 }
 
-
+/* Stile del logo */
 .logo {
     position: absolute;
     left: 5%;
@@ -26,6 +32,7 @@ h3 {
     cursor: pointer;
 }
 
+/* Stile dei link, dei pulsanti e degli elementi li */
 li, a, button {
     font-weight: 600;
     font-size: 16px;
@@ -33,30 +40,34 @@ li, a, button {
     text-decoration: none;
 }
 
+/* Stile dell'intestazione */
 header {
     background-color: transparent;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  
 }
 
+/* Effetto di ombra all'hover sull'intestazione */
 header:hover {
     box-shadow: 2px 2px 25px black;
     transition: 0.5s;
 }
 
+/* Stile dei link nella barra di navigazione */
 .navlinks li {
     display: inline-block;
     margin: 30px;
     align-items: center;
 }
 
+/* Effetto di colore al passaggio del mouse sui link nella barra di navigazione */
 .navlinks li a:hover {
     color: tomato;
     text-shadow: 1px 1px 5px black;
 }
 
+/* Stile del pulsante */
 button {
     width: 100%;
     padding: 12px;
@@ -69,10 +80,12 @@ button {
     z-index: 999;
 }
 
+/* Effetto di ombra al passaggio del mouse sul pulsante */
 button:hover {
     box-shadow: 1px 1px 5px black;
 }
 
+/* Stile della barra laterale */
 .sidebar {
     position: fixed;
     top: 0;
@@ -91,12 +104,14 @@ button:hover {
     transform: translateX(100%);
 }
 
+/* Stile degli elementi nella barra laterale */
 .sidebar li {
     width: 100%;
     margin: 25px;
     text-shadow: 1px 1px 2px black;
 }
 
+/* Stile dell'icona nella barra laterale */
 .sidebar img {
     position: absolute;
     bottom: 20px;
@@ -104,6 +119,7 @@ button:hover {
     height: 120px;
 }
 
+/* Stile dell'icona nella barra di navigazione */
 nav ion-icon {
     font-size: 2em;
     position: absolute;
@@ -111,24 +127,31 @@ nav ion-icon {
     right: 20px;
 }
 
+/* Media query per schermi larghi */
 @media only screen and (min-width: 830px) {
+    /* Nascondi l'icona nella barra di navigazione */
     .navlinks ion-icon {
         display: none;
     }
 }
 
+/* Media query per schermi stretti */
 @media only screen and (max-width: 830px) {
+    /* Nascondi gli elementi nella barra di navigazione */
     .navlinks .items {
         display: none;
     }
 }
 
-    @media only screen and (max-width: 560px) {
-      .navlinks .items {
-          display: none;
-      }
+/* Media query per schermi molto stretti */
+@media only screen and (max-width: 560px) {
+    /* Nascondi gli elementi nella barra di navigazione */
+    .navlinks .items {
+        display: none;
+    }
 }
 
+/* Stile del contenitore */
 .container {
     display: flex;
     flex-direction: row;
@@ -136,6 +159,7 @@ nav ion-icon {
     align-items: center;
 }
 
+/* Stile dell'immagine principale */
 #io {
     margin: 0;
     padding-top: 5%;
@@ -145,6 +169,7 @@ nav ion-icon {
     height: auto;
 }
 
+/* Stile del testo introduttivo */
 #testo-hero {
     justify-content: center;
     padding: 5%;
@@ -155,14 +180,17 @@ nav ion-icon {
     line-height: 2;
 }
 
-#chi-sono{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: aliceblue;
-  padding: 5%;
+/* Stile della sezione "Chi sono" */
+#chi-sono {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 5%;
 }
+
+/* Stile delle informazioni personali */
 #info {
     justify-content: center;
     display: flex;
@@ -171,6 +199,8 @@ nav ion-icon {
     align-items: center;
     padding-left: 2%;
 }
+
+/* Stile dell'immagine personale */
 #fotomeme {
     margin: 0;
     padding-top: 10%;
@@ -178,18 +208,24 @@ nav ion-icon {
     height: auto;
     padding-bottom: 10%;  
 }
+
+/* Stile del testo delle informazioni personali */
 #info p {
     line-height: 5;
 }
+
+/* Stile della linea verticale */
 .linea-verticale {
     width: 2px; /* Spessore della linea */
-    height: 700px;/* Altezza della linea */
+    height: 700px; /* Altezza della linea */
     background-color: #000; /* Colore della linea */
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 3%; /* Spazio a sinistra della linea */
     margin-right: 3%;
 }
+
+/* Stile del testo della sezione "Chi sono" */
 #testo-chi-sono {
     justify-content: center;
     display: flex;
@@ -197,12 +233,15 @@ nav ion-icon {
     text-align: center;
     align-items: center;
     line-height: valore;
-
 }
-#testo-chi-sono p{
+
+/* Stile del testo delle informazioni personali nella sezione "Chi sono" */
+#testo-chi-sono p {
     line-height: 2;
 }
-#rect-blu{
+
+/* Stile del rettangolo blu */
+#rect-blu {
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -212,6 +251,7 @@ nav ion-icon {
     border-radius: 20px;
 }
 
+/* Stile dei voti */
 .voti {
     display: flex;
     flex-direction: column;
@@ -219,22 +259,29 @@ nav ion-icon {
     align-items: center;
     text-align: center;
 }
+
+/* Stile delle immagini nella lista e delle stelle */
 .img-list, .stelle {
     max-width: 100%;
     height: auto;
 }
+
+/* Stile del testo della lista */
 .list-text {
     color: aliceblue;
 }
 
+/* Media query per schermi medio-grandi */
 @media only screen and (max-width: 768px) {
+    /* Ridimensionamento del contenitore */
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-   
+
+    /* Ridimensionamento dell'immagine principale */
     #io {
         margin: 0;
         padding-top: 5%;
@@ -244,6 +291,7 @@ nav ion-icon {
         height: auto;
     }
 
+    /* Ridimensionamento del testo introduttivo */
     #testo-hero {
         padding-top: 5%;
         display: flex;
@@ -253,36 +301,44 @@ nav ion-icon {
         max-width: 70%;
         height: auto;
     } 
-    #chi-sono{
+
+    /* Ridimensionamento della sezione "Chi sono" */
+    #chi-sono {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: aliceblue;
-
     }
+
+    /* Ridimensionamento dell'immagine personale */
     #fotome {
         display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          text-align: center;   
-        }
-    #fotomeme{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;   
+    }
+
+    /* Ridimensionamento dell'immagine personale */
+    #fotomeme {
         max-width: 200px;
         height: auto;
         padding-top: 20%;
-
     }
+
+    /* Ridimensionamento della linea verticale */
     .linea-verticale {
         width: 70%; /* Spessore della linea */
-        height: 2PX;/* Altezza della linea */
+        height: 2px; /* Altezza della linea */
         background-color: #000; /* Colore della linea */
         margin-top: 5%;
         margin-bottom: 5%;
         margin-left: 5%; /* Spazio a sinistra della linea */
         margin-right: 5%;
     }
+
+    /* Ridimensionamento del testo della sezione "Chi sono" */
     #testo-chi-sono {
         padding-top: 5%;
         display: flex;
@@ -292,6 +348,8 @@ nav ion-icon {
         max-width: 70%;
         height: auto;
     }
+
+    /* Ridimensionamento dei voti */
     .voti {
         display: flex;
         flex-direction: column;
@@ -299,22 +357,30 @@ nav ion-icon {
         align-items: center;
         text-align: center;
     }
+
+    /* Ridimensionamento delle immagini nella lista e delle stelle */
     .img-list, .stelle {
         max-width: 50%;
         height: auto;
     }
+
+    /* Stile del testo della lista */
     .list-text {
         color: aliceblue;
     }
 }
+
+/* Media query per schermi piccoli */
 @media only screen and (max-width: 500px) {
+    /* Ridimensionamento del contenitore */
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-   
+
+    /* Ridimensionamento dell'immagine principale */
     #io {
         margin: 0;
         padding-top: 5%;
@@ -324,6 +390,7 @@ nav ion-icon {
         height: auto;
     }
 
+    /* Ridimensionamento del testo introduttivo */
     #testo-hero {
         padding-top: 5%;
         display: flex;
@@ -333,36 +400,44 @@ nav ion-icon {
         max-width: 70%;
         height: auto;
     } 
-    #chi-sono{
+
+    /* Ridimensionamento della sezione "Chi sono" */
+    #chi-sono {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: aliceblue;
-
     }
+
+    /* Ridimensionamento dell'immagine personale */
     #fotome {
         display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          text-align: center;   
-        }
-    #fotomeme{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;   
+    }
+
+    /* Ridimensionamento dell'immagine personale */
+    #fotomeme {
         max-width: 200px;
         height: auto;
         padding-top: 20%;
-
     }
+
+    /* Ridimensionamento della linea verticale */
     .linea-verticale {
         width: 70%; /* Spessore della linea */
-        height: 2PX;/* Altezza della linea */
+        height: 2px; /* Altezza della linea */
         background-color: #000; /* Colore della linea */
         margin-top: 5%;
         margin-bottom: 5%;
         margin-left: 5%; /* Spazio a sinistra della linea */
         margin-right: 5%;
     }
+
+    /* Ridimensionamento del testo della sezione "Chi sono" */
     #testo-chi-sono {
         padding-top: 5%;
         display: flex;
@@ -372,6 +447,8 @@ nav ion-icon {
         max-width: 70%;
         height: auto;
     }
+
+    /* Ridimensionamento dei voti */
     .voti {
         display: flex;
         flex-direction: column;
@@ -379,13 +456,16 @@ nav ion-icon {
         align-items: center;
         text-align: center;
     }
+
+    /* Ridimensionamento delle immagini nella lista e delle stelle */
     .img-list, .stelle {
         max-width: 30%;
         height: auto;
     }
+
+    /* Stile del testo della lista */
     .list-text {
         color: aliceblue;
         font-size: 8pt;
-    
     }
 }

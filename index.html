@@ -1,106 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titolo della pagina -->
     <title>Giacomo Capetta</title>
+    <!-- Collegamento al foglio di stile CSS -->
     <link rel="stylesheet" href="index.css">
+    <!-- Collegamento allo script JavaScript -->
     <script src="script.js"></script>
 </head>
 <body>
+    <!-- Intestazione -->
     <header>
+        <!-- Logo -->
         <img src="/img/logo.png" alt="" class="logo">
+        <!-- Navigazione -->
         <nav>
+            <!-- Link di navigazione -->
             <ul class="navlinks">
                 <li class="items"><a href="#">Home</a></li>
                 <li class="items"><a href="#">Services</a></li>
                 <li class="items"><a href="#">Blog</a></li>
                 <li class="items"><a href="#">About-Us</a></li>
+                <!-- Pulsante di contatto -->
                 <li><button>Contact Us</button></li>
+                <!-- Icona per aprire la sidebar -->
                 <li onclick="showSidebar()"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
             </ul>
+            <!-- Sidebar -->
             <ul class="sidebar">
+                <!-- Icona per chiudere la sidebar -->
                 <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
+                <!-- Link di navigazione nella sidebar -->
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About-Us</a></li>
+                <!-- Immagine nella sidebar -->
                 <img src="https://t3.ftcdn.net/jpg/02/51/80/40/360_F_251804029_ON3oL8BkopdueiT61zXaDMOF3qfSiWNx.jpg" alt="">
             </ul>
         </nav>
     </header>
-<div class="container">
-    <img src="/img/io.png" alt="foto" id="io">
-    <div id="testo-hero">
+    <!-- Contenitore principale -->
+    <div class="container">
+        <!-- Immagine -->
+        <img src="/img/io.png" alt="foto" id="io">
+        <!-- Testo dell'hero section -->
+        <div id="testo-hero">
             <h2>Ciao! Io sono...</h2>
             <br>
             <h1>Giacomo Capetta</h1>
             <br>
             <p>Benvenuto nel mio portfolio di design grafico! Qui troverai una collezione di lavori creativi che riflettono la mia passione per il design innovativo e unico. Ogni progetto è una storia visiva unica, caratterizzata da un mix di colori accattivanti, layout dinamici e un'estetica fresca. Esplora le mie creazioni e lasciati ispirare dalla mia visione creativa del design grafico!</p>
-    </div>
-</div>
-<div id="chi-sono">
-    <div id="info">       
-      
-          <img src="img/fotome.png" id="fotomeme" alt="fotome">
-          <h1>GIACOMO CAPETTA</h1>
-          <p>
-            2 settembre 2001
-            <br>
-            Novara, Piemonte, Italia.
-            <br>
-            Giacomo.capetta01@gmail.com
-            <br>
-            3347635232
-          </p>
-    </div>
-    <div class="linea-verticale"></div>
-
-    <div id="testo-chi-sono">
-        <h1>Chi sono</h1>
-        <br>
-        <br>
-        <p>
-            Mi sono avvicinato da piccolo al mondo della fotografia grazie a lei sono entrato in un mondo che ho scoperto poi essere una PASSIONE.
-            Ho studiato GRAFICA E COMUNICAZIONE alle scuole superiori e sto continuando ancora oggi i miei studi in ACCADEMIA.
-            Ho cercato qui di fare un piccolo recap delle mie capacità sui software
-            al quale sono più appassionato.
-        </p>
-    <div id="rect-blu">
-        
-        <div class="voti">  
-            <img class="img-list" src="/img/loghi adobe/adobe-photoshop-logo-0 1.png" alt="photoshop">
-            <p class="list-text">Photoshop</p>
-            <img class="stelle" src="/img/stelline/quattroemezzo.png" alt="quattroemezzo"> 
-        </div>
-        <div class="voti">
-            <img class="img-list" src="/img/loghi adobe/adobe-illustrator-logo-0 1.png" alt="illustrator">
-            <p class="list-text">Illustrator</p>
-            <img class="stelle" src="/img/stelline/quattroemezzo.png" alt="quattroemezzo">
-        </div>
-        <div class="voti">
-            <img class="img-list" src="/img/loghi adobe/adobe-indesign-logo-0 1.png" alt="indesign">
-            <p class="list-text">Indesign</p>
-            <img class="stelle" src="/img/stelline/quattro.png" alt="quattro">
-        </div>
-        <div class="voti">
-            <img class="img-list" src="/img/loghi adobe/adobe-premiere-logo-0 1.png" alt="premiere"> 
-            <p class="list-text">Premiere</p>
-            <img class="stelle" src="/img/stelline/treemezzo.png" alt="treemezzo">
-        </div>
-        <div class="voti">
-            <img class="img-list" src="/img/loghi adobe/figma.png" alt="figma">
-            <p class="list-text">Figma</p>
-            <img class="stelle" src="/img/stelline/quattro.png" alt="quattro">
         </div>
     </div>
-        
-  </div>
-    
-</div>
-    
-    
-    
+    <!-- Sezione "Chi sono" -->
+    <div id="chi-sono">
+        <!-- Informazioni personali -->
+        <div id="info">       
+            <img src="img/fotome.png" id="fotomeme" alt="fotome">
+            <h1>GIACOMO CAPETTA</h1>
+            <p>
+                2 settembre 2001
+                <br>
+                Novara, Piemonte, Italia.
+                <br>
+                Giacomo.capetta01@gmail.com
+                <br>
+                3347635232
+            </p>
+        </div>
+        <!-- Linea verticale -->
+        <div class="linea-verticale"></div>
+        <!-- Testo "Chi sono" -->
+        <div id="testo-chi-sono">
+            <h1>Chi sono</h1>
+            <br>
+            <br>
+            <p>
+                Mi sono avvicinato da piccolo al mondo della fotografia grazie a lei sono entrato in un mondo che ho scoperto poi essere una PASSIONE.
+                Ho studiato GRAFICA E COMUNICAZIONE alle scuole superiori e sto continuando ancora oggi i miei studi in ACCADEMIA.
+                Ho cercato qui di fare un piccolo recap delle mie capacità sui software
+                al quale sono più appassionato.
+            </p>
+            <!-- Elenco dei software -->
+            <div id="rect-blu">
+                <div class="voti">  
+                    <img class="img-list" src="/img/loghi adobe/adobe-photoshop-logo-0 1.png" alt="photoshop">
+                    <p class="list-text">Photoshop</p>
+                    <img class="stelle" src="/img/stelline/quattroemezzo.png" alt="quattroemezzo"> 
+                </div>
+                <div class="voti">
+                    <img class="img-list" src="/img/loghi adobe/adobe-illustrator-logo-0 1.png" alt="illustrator">
+                    <p class="list-text">Illustrator</p>
+                    <img class="stelle" src="/img/stelline/quattroemezzo.png" alt="quattroemezzo">
+                </div>
+                <div class="voti">
+                    <img class="img-list" src="/img/loghi adobe/adobe-indesign-logo-0 1.png" alt="indesign">
+                    <p class="list-text">Indesign</p>
+                    <img class="stelle" src="/img/stelline/quattro.png" alt="quattro">
+                </div>
+                <div class="voti">
+                    <img class="img-list" src="/img/loghi adobe/adobe-premiere-logo-0 1.png" alt="premiere"> 
+                    <p class="list-text">Premiere</p>
+                    <img class="stelle" src="/img/stelline/treemezzo.png" alt="treemezzo">
+                </div>
+                <div class="voti">
+                    <img class="img-list" src="/img/loghi adobe/figma.png" alt="figma">
+                    <p class="list-text">Figma</p>
+                    <img class="stelle" src="/img/stelline/quattro.png" alt="quattro">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script per gli icon fonts -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
