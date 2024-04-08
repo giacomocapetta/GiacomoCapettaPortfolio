@@ -17,12 +17,6 @@ body {
     background-position: center; /* Posizionamento del background al centro */
 }
 
-/* Stile degli elementi h3 */
-h3 {
-    padding-bottom: 15%;
-    padding-top: 10%;
-}
-
 /* Stile del logo */
 .logo {
     position: absolute;
@@ -270,7 +264,31 @@ nav ion-icon {
 .list-text {
     color: aliceblue;
 }
+#supercar { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10%;
 
+}
+#testo-supercar {
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    line-height: 2;
+}
+#img-supercar {
+    margin: 0;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 80%;
+    height: auto;
+}
 /* Media query per schermi medio-grandi */
 @media only screen and (max-width: 768px) {
     /* Ridimensionamento del contenitore */
