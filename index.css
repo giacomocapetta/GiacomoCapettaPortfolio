@@ -181,7 +181,9 @@ nav ion-icon {
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    padding: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* Stile delle informazioni personali */
@@ -226,13 +228,10 @@ nav ion-icon {
     flex-direction: column; 
     text-align: center;
     align-items: center;
-    line-height: valore;
-}
-
-/* Stile del testo delle informazioni personali nella sezione "Chi sono" */
-#testo-chi-sono p {
     line-height: 2;
 }
+
+
 
 /* Stile del rettangolo blu */
 #rect-blu {
@@ -264,30 +263,32 @@ nav ion-icon {
 .list-text {
     color: aliceblue;
 }
-#supercar { 
+.progetti { 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    padding: 10%;
+    padding: 2% 5%;
 
 }
-#testo-supercar {
+.testo-progetti {
     justify-content: center;
     display: flex;
     flex-direction: column; 
     text-align: center;
     align-items: center;
     line-height: 2;
+    padding-left: 3%;
+    padding-right: 3%;
 }
-#img-supercar {
+.img-progetti {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
     margin: 0;
-    padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    max-width: 80%;
-    height: auto;
 }
 /* Media query per schermi medio-grandi */
 @media only screen and (max-width: 768px) {
