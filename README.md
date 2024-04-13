@@ -8,7 +8,7 @@ Il mio portfolio è un luogo dove mostro il mio lavoro, con l'obiettivo di condi
 
 ## Accesso al Portfolio
 
-Puoi visitare il mio sito portfolio [qui] https://resilient-pasca-4f7eee.netlify.app/.
+Puoi visitare il mio sito portfolio [qui] https:https://giacomocapetta.netlify.app/
 
 ## Progetti Principali
 
@@ -33,7 +33,7 @@ Il mio sito è progettato per essere intuitivo e facile da navigare. Puoi esplor
 Per collaborazioni, domande o feedback, non esitare a contattarmi:
 
 - Email: [giacomo.capetta01@gmail.com]
-- Portfolio: [https://resilient-pasca-4f7eee.netlify.app/]
+- Portfolio: https://giacomocapetta.netlify.app/
 - Instagram: [@giacomocape]
 
 ## Licenza
