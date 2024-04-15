@@ -7,11 +7,11 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'esercizi/*.*'
+      - '*.*'
   pull_request:
     branches: [ main ]
     paths:
-      - 'esercizi/*.*'
+      - '*.*'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,7 +32,7 @@ jobs:
       uses: Cyb3r-Jak3/html5validator-action@v7.2.0
       with:
         # Path of the files to test
-        root: esercizi/ # optional
+        #root: esercizi/ # optional
         # Path of config file
         #config: # optional
         # Extra arguments to test with
