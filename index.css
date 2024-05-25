@@ -1,6 +1,23 @@
 /* Importazione del font Montserrat da Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
+
+.bricolage-grotesque -<h1> {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <800>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.bricolage-grotesque -<h2> {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <400>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
 /* Reset dei margini e del padding per tutti gli elementi */
 * {  
     box-sizing: border-box;
@@ -13,14 +30,7 @@ body {
    
     font-family: 'Montserrat', sans-serif; /* Utilizzo del font Montserrat */
     background:
-        linear-gradient(to right, grey 1px, transparent 1px,),
-        linear-gradient(to bottom, grey 1px, transparent 1px),
         linear-gradient(0deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
-    background-size:
-        20px 20px,
-        20px 20px,
-        auto;
-    ;
 }
 .logo {
     position: absolute;
