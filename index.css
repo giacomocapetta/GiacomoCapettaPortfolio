@@ -10,14 +10,18 @@
 
 /* Stile del body */
 body {
+   
     font-family: 'Montserrat', sans-serif; /* Utilizzo del font Montserrat */
-    /* Background con gradiente lineare */
-    background: linear-gradient(0deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
-    background-size: cover; /* Ridimensionamento del background */
-    background-position: center; /* Posizionamento del background al centro */
+    background:
+        linear-gradient(to right, grey 1px, transparent 1px,),
+        linear-gradient(to bottom, grey 1px, transparent 1px),
+        linear-gradient(0deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
+    background-size:
+        20px 20px,
+        20px 20px,
+        auto;
+    ;
 }
-
-/* Stile del logo */
 .logo {
     position: absolute;
     left: 5%;
