@@ -80,17 +80,20 @@ button {
     width: 100%;
     padding: 12px;
     background-color: firebrick;
-    border-radius: 50px;
     outline: none;
     cursor: pointer;
     transition: all 0.5s ease;
     border: none;
     z-index: 999;
+    border-radius: 45px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
 }
 
 /* Effetto di ombra al passaggio del mouse sul pulsante */
 button:hover {
     box-shadow: 1px 1px 5px black;
+
 }
 
 /* Stile della barra laterale */
@@ -185,7 +188,12 @@ nav ion-icon {
     align-items: center;
     line-height: 2;
 }
+.element {
+    text-align: center;
+    justify-content: center;
+    padding: 2%;
 
+}
 /* Stile della sezione "Chi sono" */
 #chi-sono {
     display: flex;
@@ -193,11 +201,17 @@ nav ion-icon {
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 5%;
 }
-
+#testo-chi-sono {
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    line-height: 2;
+    padding:0%, 0%, 5%, 5%;
+}
 /* Stile delle informazioni personali */
 #info {
     justify-content: center;
@@ -234,15 +248,6 @@ nav ion-icon {
 }
 
 /* Stile del testo della sezione "Chi sono" */
-#testo-chi-sono {
-    justify-content: center;
-    display: flex;
-    flex-direction: column; 
-    text-align: center;
-    align-items: center;
-    line-height: 2;
-}
-
 
 
 /* Stile del rettangolo blu */
@@ -252,8 +257,10 @@ nav ion-icon {
     background-color: black;
     height: auto;
     width: fit-content;
-    margin-top: 10%;
+    margin: 10%;
     border-radius: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Stile dei voti */
@@ -263,10 +270,16 @@ nav ion-icon {
     padding: 4%;
     align-items: center;
     text-align: center;
+    max-width: 20%;
+    height: auto;
 }
 
 /* Stile delle immagini nella lista e delle stelle */
-.img-list, .stelle {
+.img-list {
+    max-width: 80%;
+    height: auto;
+}
+ .stelle {
     max-width: 100%;
     height: auto;
 }
@@ -275,6 +288,7 @@ nav ion-icon {
 .list-text {
     color: aliceblue;
 }
+
 .progetti { 
     display: flex;
     flex-direction: row;
@@ -302,122 +316,6 @@ nav ion-icon {
     padding-left: 5%;
     padding-right: 5%;
 }
-/* Media query per schermi medio-grandi */
-@media only screen and (max-width: 768px) {
-    /* Ridimensionamento del contenitore */
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Ridimensionamento dell'immagine principale */
-    #io {
-        padding-top: 5%;
-        padding-left: 2%;
-        padding-right: 2%;
-        max-width: 50%;
-        height: auto;
-    }
-
-    /* Ridimensionamento del testo introduttivo */
-    #testo-hero {
-        padding-top: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 90%;
-        height: auto;
-        background-color:rgb(255, 255, 255);
-        border: 1px;
-        border-radius: 45px;
-        margin-bottom: 10%;
-    } 
-
-    /* Ridimensionamento della sezione "Chi sono" */
-    #chi-sono {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: aliceblue;
-    }
-
-    /* Ridimensionamento dell'immagine personale */
-    #fotome {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;   
-    }
-
-    /* Ridimensionamento dell'immagine personale */
-    #fotomeme {
-        max-width: 200px;
-        height: auto;
-        
-    }
-
-    /* Ridimensionamento della linea verticale */
-    .linea-verticale {
-        width: 70%; /* Spessore della linea */
-        height: 2px; /* Altezza della linea */
-        background-color: #000; /* Colore della linea */
-        margin-top: 5%;
-        margin-bottom: 5%;
-        margin-left: 5%; /* Spazio a sinistra della linea */
-        margin-right: 5%;
-    }
-
-    /* Ridimensionamento del testo della sezione "Chi sono" */
-    #testo-chi-sono {
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 95%;
-        height: auto;
-    }
-    #rect-blu {
-        display: flex;
-        flex-wrap: wrap; /* Permette il wrapping su più righe */
-        row-gap: 10px; /* Spazio tra i div */
-        margin: 40px, 0px, 100px, 100px;
-    }
-    .img-list{
-        max-width: 70px;
-        height: auto;
-    }
-    .stelle{
-        max-width: 100px;
-        height: auto;
-    }
-    /* Ridimensionamento dei voti */
-    
-    .voti {
-        flex: 1 1 20%; /* Ogni div occupa il 20% dello spazio disponibile */
-        min-width: 10px; /* Larghezza minima per ogni div */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-left: 30px;
-        margin-right: 30px;
-
-    }
-   
-
-    /* Ridimensionamento delle immagini nella lista e delle stelle */
-
-    /* Stile del testo della lista */
-    .list-text {
-        color: aliceblue;
-    }
-}
 
 /* Media query per schermi piccoli */
 @media only screen and (max-width: 500px) {
@@ -432,7 +330,7 @@ nav ion-icon {
     /* Ridimensionamento dell'immagine principale */
     #io {
         margin: 0;
-        padding-top: 5%;
+        padding-top:0%;
         padding-left: 5%;
         padding-right: 5%;
         max-width: 70%;
@@ -441,7 +339,7 @@ nav ion-icon {
 
     /* Ridimensionamento del testo introduttivo */
     #testo-hero {
-        padding-top: 5%;
+        padding: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -449,6 +347,12 @@ nav ion-icon {
         max-width: 90%;
         height: auto;
         font-size: small;
+        background-color: white;
+        border-radius: 45px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+
     } 
 
     /* Ridimensionamento della sezione "Chi sono" */
@@ -458,6 +362,12 @@ nav ion-icon {
         justify-content: center;
         align-items: center;
         background-color: aliceblue;
+        padding: 0%;
+    }
+    
+    #info p {
+        padding-top: 10px;
+        line-height: 2;
     }
 
     /* Ridimensionamento dell'immagine personale */
@@ -477,7 +387,7 @@ nav ion-icon {
 
     /* Ridimensionamento della linea verticale */
     .linea-verticale {
-        width: 70%; /* Spessore della linea */
+        width: 90%; /* Spessore della linea */
         height: 2px; /* Altezza della linea */
         background-color: #000; /* Colore della linea */
         margin-top: 5%;
@@ -488,27 +398,47 @@ nav ion-icon {
 
     /* Ridimensionamento del testo della sezione "Chi sono" */
     #testo-chi-sono {
-        padding-top: 5%;
+        padding: 0%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 70%;
+        max-width: 90%;
         height: auto;
     }
-
+    #rect-blu {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        flex-direction: row;
+        background-color: black;
+        height: auto;
+        width: fit-content;
+        margin: 5%;
+        border-radius: 20px;
+        padding: 20px;
+        align-items: center;
+        justify-self: center;
+    }
+    
     /* Ridimensionamento dei voti */
     .voti {
         display: flex;
         flex-direction: column;
-        padding: 4%;
         align-items: center;
         text-align: center;
+        padding:2%;
+        max-width: 45%;
+        height: auto;
     }
-
+    
     /* Ridimensionamento delle immagini nella lista e delle stelle */
-    .img-list, .stelle {
+    .img-list {
         max-width: 30%;
+        height: auto;
+    }
+    .stelle {
+        max-width: 40%;
         height: auto;
     }
 
@@ -516,5 +446,34 @@ nav ion-icon {
     .list-text {
         color: aliceblue;
         font-size: 8pt;
+    }
+    .progetti { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        padding: 2% 5%;
+        margin: 20px;
+        border-radius: 45px;
+        border: 3px;    
+    }
+    .testo-progetti {
+        justify-content: center;
+        display: none;
+        flex-direction: column; 
+        text-align: center;
+        align-items: center;
+        line-height: 2;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .img-progetti {
+        width: 100%;
+        max-width: fit-content;
+        height: auto;
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
