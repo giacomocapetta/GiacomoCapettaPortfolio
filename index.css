@@ -41,10 +41,16 @@ body {
 }
 
 /* Stile dei link, dei pulsanti e degli elementi li */
-li, a, button {
+li, a {
     font-weight: 600;
     font-size: 16px;
-    color: bisque;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+button {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -54,12 +60,6 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-/* Effetto di ombra all'hover sull'intestazione */
-header:hover {
-    box-shadow: 2px 2px 25px black;
-    transition: 0.5s;
 }
 
 /* Stile dei link nella barra di navigazione */
@@ -99,11 +99,9 @@ button:hover {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 300px;
+    width: 150px;
     z-index: 999;
     background-color: white;
-    backdrop-filter: blur(1px);
-    box-shadow: -3px 0 10px black;
     display: none;
     justify-content: flex-start;
     list-style: none;
@@ -116,16 +114,9 @@ button:hover {
 .sidebar li {
     width: 100%;
     margin: 25px;
-    text-shadow: 1px 1px 2px black;
 }
 
-/* Stile dell'icona nella barra laterale */
-.sidebar img {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    height: 120px;
-}
+
 
 /* Stile dell'icona nella barra di navigazione */
 nav ion-icon {
@@ -157,6 +148,7 @@ nav ion-icon {
     .navlinks .items {
         display: none;
     }
+
 }
 
 /* Stile del contenitore */
@@ -316,10 +308,9 @@ nav ion-icon {
 
     /* Ridimensionamento dell'immagine principale */
     #io {
-        margin: 0;
         padding-top: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
         max-width: 50%;
         height: auto;
     }
@@ -331,8 +322,12 @@ nav ion-icon {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 70%;
+        max-width: 90%;
         height: auto;
+        background-color:rgb(255, 255, 255);
+        border: 1px;
+        border-radius: 45px;
+        margin-bottom: 10%;
     } 
 
     /* Ridimensionamento della sezione "Chi sono" */
