@@ -28,7 +28,7 @@
 /* Stile del body */
 body {
    
-    font-family: 'Montserrat', sans-serif; /* Utilizzo del font Montserrat */
+    font-family: 'Bricolage Grotesque', sans-serif; /* Utilizzo del font Montserrat */
     background:
         linear-gradient(0deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
 }
