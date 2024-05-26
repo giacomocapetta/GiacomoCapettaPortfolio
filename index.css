@@ -69,12 +69,6 @@ header {
     align-items: center;
 }
 
-/* Effetto di colore al passaggio del mouse sui link nella barra di navigazione */
-.navlinks li a:hover {
-    color: tomato;
-    text-shadow: 1px 1px 5px black;
-}
-
 /* Stile del pulsante */
 button {
     width: 100%;
@@ -210,7 +204,7 @@ nav ion-icon {
     text-align: center;
     align-items: center;
     line-height: 2;
-    padding:0%, 0%, 5%, 5%;
+    padding: 0%, 0%, 5%, 5%;
 }
 /* Stile delle informazioni personali */
 #info {
@@ -270,22 +264,23 @@ nav ion-icon {
     padding: 4%;
     align-items: center;
     text-align: center;
-    max-width: 20%;
+    max-width: 50%;
     height: auto;
 }
 
 /* Stile delle immagini nella lista e delle stelle */
 .img-list {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
 }
  .stelle {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
 /* Stile del testo della lista */
 .list-text {
+    display: flex;
     color: aliceblue;
 }
 
@@ -319,6 +314,31 @@ nav ion-icon {
 
 /* Media query per schermi piccoli */
 @media only screen and (max-width: 500px) {
+    button {
+        width: 100%;
+        padding: 6px;
+        background-color: firebrick;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        border: none;
+        z-index: 999;
+        border-radius: 45px;
+        border: 2px solid black;
+        box-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+    }
+    button {
+        font-weight: 600;
+        font-size: 10pt;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    /* Effetto di ombra al passaggio del mouse sul pulsante */
+    button:hover {
+        box-shadow: 1px 1px 5px black;
+    
+    }
     /* Ridimensionamento del contenitore */
     .container {
         display: flex;
@@ -403,8 +423,9 @@ nav ion-icon {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 90%;
+        max-width: 100%;
         height: auto;
+        margin: 10px;
     }
     #rect-blu {
         display: flex;
@@ -414,9 +435,9 @@ nav ion-icon {
         background-color: black;
         height: auto;
         width: fit-content;
-        margin: 5%;
         border-radius: 20px;
-        padding: 20px;
+        padding: 0px;
+        margin: 0%;
         align-items: center;
         justify-self: center;
     }
@@ -427,8 +448,8 @@ nav ion-icon {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding:2%;
-        max-width: 45%;
+        padding:5px;
+        max-width: 50%;
         height: auto;
     }
     
@@ -444,6 +465,7 @@ nav ion-icon {
 
     /* Stile del testo della lista */
     .list-text {
+        display: none;
         color: aliceblue;
         font-size: 8pt;
     }
