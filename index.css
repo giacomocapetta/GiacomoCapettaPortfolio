@@ -311,7 +311,13 @@ nav ion-icon {
     padding-left: 5%;
     padding-right: 5%;
 }
-
+footer{
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    padding: 2%;
+}
 /* Media query per schermi piccoli */
 @media only screen and (max-width: 500px) {
     button {
@@ -449,7 +455,7 @@ nav ion-icon {
         align-items: center;
         text-align: center;
         padding:5px;
-        max-width: 50%;
+        max-width: 40%;
         height: auto;
     }
     
