@@ -424,7 +424,7 @@ footer{
 
     /* Ridimensionamento del testo della sezione "Chi sono" */
     #testo-chi-sono {
-        padding: 0%;
+        padding: 2%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -436,14 +436,13 @@ footer{
     #rect-blu {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 10px;
         flex-direction: row;
         background-color: black;
         height: auto;
         width: fit-content;
         border-radius: 20px;
-        padding: 0px;
-        margin: 0%;
+        padding: 0px,0px,10px,10px;
+        margin: 10%;
         align-items: center;
         justify-self: center;
     }
@@ -454,18 +453,20 @@ footer{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding:5px;
+        padding: 5%;
+        margin: 10px;
         max-width: 40%;
         height: auto;
     }
     
     /* Ridimensionamento delle immagini nella lista e delle stelle */
     .img-list {
-        max-width: 30%;
+        max-width: 40px;
         height: auto;
+        margin-bottom: 15px;
     }
     .stelle {
-        max-width: 40%;
+        max-width: 60px;
         height: auto;
     }
 
