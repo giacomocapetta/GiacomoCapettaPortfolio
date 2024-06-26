@@ -20,9 +20,9 @@
         <nav>
             <!-- Link di navigazione -->
             <ul class="navlinks">
-                <li class="items"><a href="#">Home</a></li>
-                <li class="items"><a href="#">Chi sono</a></li>
-                <li class="items"><a href="#">Progetti</a></li>
+                <li class="items"><a href="#home">Home</a></li>
+                <li class="items"><a href="#chi-sono">Chi sono</a></li>
+                <li class="items"><a href="#progetti">Progetti</a></li>
                 <!-- Pulsante di contatto -->
                 <li><button>Contattami</button></li>
                 <!-- Icona per aprire la sidebar -->
@@ -33,14 +33,14 @@
                 <!-- Icona per chiudere la sidebar -->
                 <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
                 <!-- Link di navigazione nella sidebar -->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chi sono</a></li>
-                <li><a href="#">Progetti</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chi-sono">Chi sono</a></li>
+                <li><a href="#progetti">Progetti</a></li>
                </ul>
         </nav>
     </header>
     <!-- Contenitore principale -->
-    <div class="container">
+    <div class="container" id="home">
         <!-- Immagine -->
         <img src="/img/io.png" alt="foto" id="io">
         <!-- Testo dell'hero section -->
@@ -114,8 +114,8 @@
             </div>
         </div>
     </div>
-    <div class="element"><h1>Progetti</h1></div>
-    <div class="progetti">
+    <div class="element" id="progetti"><h1>Progetti</h1></div>
+    <div class="progetti" >
         <div class="testo-progetti">
             <h1>SUPERCAR:</h1>
             

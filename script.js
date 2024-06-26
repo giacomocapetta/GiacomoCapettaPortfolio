@@ -13,3 +13,8 @@ function closeSidebar() {
         sidebar.style.display = 'none';
     }, 300);
 }
+const anchors = document.querySelectorAll('a[href^="#"]');
+
+anchors.forEach(anchor => {
+  anchor.addEventListener('click', smoothScroll);
+});

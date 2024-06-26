@@ -1,23 +1,26 @@
 /* Importazione del font Montserrat da Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
-
-.bricolage-grotesque -<h1> {
+html {
+    scroll-behavior: smooth;
+  }
+.bricolage-grotesque {
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <800>;
-  font-style: normal;
   font-variation-settings:
+    "width" 100,
     "wdth" 100;
 }
-.bricolage-grotesque -<h2> {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <400>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+
+.bricolage-grotesque h1 {
+  font-weight: 800;
+  font-style: normal;
+}
+
+.bricolage-grotesque h2 {
+  font-weight: 400;
+  font-style: normal;
+}
 /* Reset dei margini e del padding per tutti gli elementi */
 * {  
     box-sizing: border-box;
@@ -27,7 +30,7 @@
 
 /* Stile del body */
 body {
-   
+
     font-family: 'Bricolage Grotesque', sans-serif; /* Utilizzo del font Montserrat */
     background:
         linear-gradient(0deg, hsla(230, 59%, 25%, 1) 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
@@ -183,34 +186,53 @@ nav ion-icon {
     line-height: 2;
 }
 .element {
+    font-size: larger;
     text-align: center;
     justify-content: center;
     padding: 2%;
-
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    border: 4px solid black;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
 }
 /* Stile della sezione "Chi sono" */
 #chi-sono {
     display: flex;
     flex-direction: row;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    padding: 5%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
 }
 #testo-chi-sono {
     justify-content: center;
     display: flex;
     flex-direction: column; 
+    gap: 50px;
     text-align: center;
     align-items: center;
     line-height: 2;
-    padding: 0%, 0%, 5%, 5%;
+    padding: 0%;
+}
+#testo-chi-sono p {
+    max-width: 60%;
+    height: auto;
 }
 /* Stile delle informazioni personali */
 #info {
     justify-content: center;
     display: flex;
     flex-direction: column; 
+    gap: 30px;
     text-align: center;
     align-items: center;
     padding-left: 2%;
@@ -235,8 +257,7 @@ nav ion-icon {
     width: 2px; /* Spessore della linea */
     height: 700px; /* Altezza della linea */
     background-color: #000; /* Colore della linea */
-    margin-top: 40px;
-    margin-bottom: 40px;
+    
     margin-left: 3%; /* Spazio a sinistra della linea */
     margin-right: 3%;
 }
@@ -251,7 +272,6 @@ nav ion-icon {
     background-color: black;
     height: auto;
     width: fit-content;
-    margin: 10%;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
@@ -287,11 +307,19 @@ nav ion-icon {
 .progetti { 
     display: flex;
     flex-direction: row;
+    gap: 100px;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    padding: 2% 5%;
-
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom:  5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    border: 4px solid black;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
 }
 .testo-progetti {
     justify-content: center;
@@ -300,16 +328,14 @@ nav ion-icon {
     text-align: center;
     align-items: center;
     line-height: 2;
-    padding-left: 3%;
-    padding-right: 3%;
+    max-width: 30%;
 }
 .img-progetti {
-    width: 50%;
-    max-width: 50%;
+    width: 40%;
     height: auto;
-    margin: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
 }
 footer{
     background-color: white;
@@ -424,14 +450,18 @@ footer{
 
     /* Ridimensionamento del testo della sezione "Chi sono" */
     #testo-chi-sono {
-        padding: 2%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         max-width: 100%;
         height: auto;
-        margin: 10px;
+       margin-right: 0%;
+       margin-left: 0%;
+    }
+    #testo-chi-sono p {
+        max-width: 90%;
+        height: auto;
     }
     #rect-blu {
         display: flex;
@@ -441,8 +471,10 @@ footer{
         height: auto;
         width: fit-content;
         border-radius: 20px;
-        padding: 0px,0px,10px,10px;
-        margin: 10%;
+        margin-top:0%;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-bottom: 3%;
         align-items: center;
         justify-self: center;
     }
@@ -486,6 +518,7 @@ footer{
         margin: 20px;
         border-radius: 45px;
         border: 3px;    
+        aspect-ratio: 1 / 1;
     }
     .testo-progetti {
         justify-content: center;
@@ -498,11 +531,12 @@ footer{
         padding-right: 3%;
     }
     .img-progetti {
-        width: 100%;
-        max-width: fit-content;
+        width: 80%;
         height: auto;
-        margin: 0;
-        padding-left: 5%;
-        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
     }
+   
+  
 }
