@@ -28,3 +28,20 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+// scripts.js
+document.addEventListener('DOMContentLoaded', function() {
+    const card = document.querySelector('.inner');
+
+    const handleIntersection = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const options = { threshold: 0.1 };
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(card);
+});
