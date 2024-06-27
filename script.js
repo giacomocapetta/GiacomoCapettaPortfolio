@@ -18,3 +18,13 @@ const anchors = document.querySelectorAll('a[href^="#"]');
 anchors.forEach(anchor => {
   anchor.addEventListener('click', smoothScroll);
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var progettiElements = document.querySelectorAll('.progetti');
+  
+    progettiElements.forEach(function(element) {
+      element.addEventListener('click', function() {
+        // Alterna la classe 'active' per applicare la trasformazione 3D
+        this.classList.toggle('active');
+      });
+    });
+  });
