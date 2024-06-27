@@ -304,7 +304,8 @@ nav ion-icon {
     color: aliceblue;
 }
 
-.progetti { 
+.inner { 
+
     display: flex;
     flex-direction: row;
     gap: 100px;
@@ -322,6 +323,7 @@ nav ion-icon {
     box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
 }
 .testo-progetti {
+
     justify-content: center;
     display: flex;
     flex-direction: column; 
@@ -330,13 +332,7 @@ nav ion-icon {
     line-height: 2;
     max-width: 30%;
 }
-.img-progetti {
-    width: 40%;
-    height: auto;
-    object-fit: contain;
-    align-items: center;
-    justify-content: center;
-}
+
 footer{
     background-color: white;
     text-align: center;
@@ -344,6 +340,7 @@ footer{
     color: black;
     padding: 2%;
 }
+
 /* Media query per schermi piccoli */
 @media only screen and (max-width: 500px) {
     button {
@@ -508,35 +505,64 @@ footer{
         color: aliceblue;
         font-size: 8pt;
     }
-    .progetti { 
-        display: flex;
-        flex-direction: column;
+    .progetti {
+        background-color: transparent;
+        padding: 0%;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .inner { 
+        margin: auto;
+        position: relative;
+        text-align: center;
+        aspect-ratio: 1 / 1;
+        height: 100%;
+        width: 100%;
         justify-content: center;
         align-items: center;
         background-color: aliceblue;
-        padding: 2% 5%;
-        margin: 20px;
         border-radius: 45px;
-        border: 3px;    
-        aspect-ratio: 1 / 1;
+        border: 4px solid black;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
     }
+    
+    
+     
     .testo-progetti {
-        justify-content: center;
-        display: none;
-        flex-direction: column; 
         text-align: center;
-        align-items: center;
-        line-height: 2;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-    .img-progetti {
-        width: 80%;
+        transform: rotateY(180deg);
+        max-width: 90%;
         height: auto;
-        object-fit: cover;
-        align-items: center;
-        justify-content: center;
     }
-   
+    .testo-progetti p {
+        width: 290px;
+        font-size: smaller;
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .img-progetti img {
+        max-width: 280px;
+        max-height: 300px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+    .progetti:hover .inner {
+    transform: rotateY(180deg);
+  }
   
+  /* Position the front and back side */
+  .img-progetti, .testo-progetti {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
 }
+
