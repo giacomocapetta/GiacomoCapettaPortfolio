@@ -332,6 +332,18 @@ nav ion-icon {
     line-height: 2;
     max-width: 30%;
 }
+.img-progetti {
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.img-progetti img {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+}
 
 footer{
     background-color: white;
@@ -340,9 +352,211 @@ footer{
     color: black;
     padding: 2%;
 }
+@media only screen and (max-width: 1200px) {
+    button {
+        width: 100%;
+        padding: 6px;
+        background-color: firebrick;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        border: none;
+        z-index: 999;
+        border-radius: 45px;
+        border: 2px solid black;
+        box-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+    }
+    button {
+        font-weight: 600;
+        font-size: 10pt;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    /* Effetto di ombra al passaggio del mouse sul pulsante */
+    button:hover {
+        box-shadow: 1px 1px 5px black;
+    
+    }
+    /* Ridimensionamento del contenitore */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    /* Ridimensionamento dell'immagine principale */
+    #io {
+        margin: 0;
+        padding-top:0%;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 70%;
+        height: auto;
+    }
+
+    /* Ridimensionamento del testo introduttivo */
+    #testo-hero {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        height: auto;
+        font-size: small;
+        background-color: white;
+        border-radius: 45px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+
+    } 
+
+    /* Ridimensionamento della sezione "Chi sono" */
+    #chi-sono {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        padding: 0%;
+    }
+    
+    #info p {
+        padding-top: 10px;
+        line-height: 2;
+    }
+
+    /* Ridimensionamento dell'immagine personale */
+    #fotome {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;   
+    }
+
+    /* Ridimensionamento dell'immagine personale */
+    #fotomeme {
+        max-width: 200px;
+        height: auto;
+    }
+
+    /* Ridimensionamento della linea verticale */
+    .linea-verticale {
+        width: 90%; /* Spessore della linea */
+        height: 2px; /* Altezza della linea */
+        background-color: #000; /* Colore della linea */
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%; /* Spazio a sinistra della linea */
+        margin-right: 5%;
+    }
+
+    /* Ridimensionamento del testo della sezione "Chi sono" */
+    #testo-chi-sono {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+       margin-right: 0%;
+       margin-left: 0%;
+    }
+    #testo-chi-sono p {
+        max-width: 90%;
+        height: auto;
+    }
+    #rect-blu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: black;
+        height: auto;
+        width: fit-content;
+        border-radius: 20px;
+        margin-top:0%;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        align-items: center;
+        justify-self: center;
+    }
+    
+    /* Ridimensionamento dei voti */
+    .voti {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+        margin: 10px;
+        max-width: 40%;
+        height: auto;
+    }
+    
+    /* Ridimensionamento delle immagini nella lista e delle stelle */
+    .img-list {
+        max-width: 40px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .stelle {
+        max-width: 60px;
+        height: auto;
+    }
+
+    /* Stile del testo della lista */
+    .list-text {
+        display: none;
+        color: aliceblue;
+        font-size: 8pt;
+    }
+    .inner { 
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        padding: 2%;
+        margin-top: 2%;
+        margin-bottom:  5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 20px;
+        border: 4px solid black;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+    }
+    .testo-progetti {
+        justify-content: center;
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        align-items: center;
+        line-height: 2;
+        max-width: 90%;
+        
+    }
+    .img-progetti {
+        display: flex;
+        max-width: 90%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-progetti img {
+        max-width: 90%;
+        height: auto;
+    }
+}
 /* Media query per schermi piccoli */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
     button {
         width: 100%;
         padding: 6px;
@@ -548,9 +762,9 @@ footer{
   
     
     .img-progetti img {
-        max-width: 290px;
-        max-height: 290px;
-        width: auto;
+        max-height: 50%;
+        max-width: 90%;
+        width: 100%;
         height: auto;
         object-fit: contain;
     }
