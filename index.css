@@ -554,7 +554,7 @@ footer{
         height: auto;
         object-fit: contain;
     }
-    .progetti:hover .inner {
+    .progetti:focus .inner {
     transform: rotateY(180deg);
   }
   
