@@ -237,7 +237,7 @@ nav ion-icon {
     padding: 0%;
 }
 
-#testo-chi-sono p {
+#testo-chi-sono > p {
     max-width: 60%;
     height: auto;
 }
@@ -288,28 +288,32 @@ nav ion-icon {
 #rect-blu {
     display: flex;
     flex-direction: row;
+    gap: 2%;
     background-color: black;
     height: auto;
     width: fit-content;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
+    padding: 3%;
 }
-
 /* Stile dei voti */
 .voti {
     display: flex;
     flex-direction: column;
-    padding: 4%;
+    gap: 5px;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    margin: auto;
     max-width: 50%;
     height: auto;
 }
 
 /* Stile delle immagini nella lista e delle stelle */
 .img-list {
-    max-width: 90%;
+    max-width: 40%;
+    width: 100%;
     height: auto;
 }
 
@@ -320,8 +324,13 @@ nav ion-icon {
 
 /* Stile del testo della lista */
 .list-text {
+    max-width: 100%;
     display: flex;
     color: aliceblue;
+}
+.list-text p{
+    max-width: 100%;
+    
 }
 
 .inner {
@@ -516,6 +525,7 @@ footer {
         margin-bottom: 3%;
         align-items: center;
         justify-self: center;
+        padding: 0%;
     }
 
     /* Ridimensionamento dei voti */
@@ -718,7 +728,7 @@ footer {
         margin-left: 0%;
     }
 
-    #testo-chi-sono p {
+    #-chi-sono p {
         max-width: 90%;
         height: auto;
     }
@@ -732,11 +742,12 @@ footer {
         width: fit-content;
         border-radius: 20px;
         margin-top: 0%;
-        margin-right: 3%;
-        margin-left: 3%;
+        margin-right: 5%;
+        margin-left: 5%;
         margin-bottom: 3%;
         align-items: center;
         justify-self: center;
+        padding: 0%;
     }
 
     /* Ridimensionamento dei voti */
@@ -745,7 +756,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 5%;
+        padding: %;
         margin: 10px;
         max-width: 40%;
         height: auto;
@@ -768,6 +779,7 @@ footer {
         display: none;
         color: aliceblue;
         font-size: 8pt;
+        text-align: center;
     }
 
     .progetti {
