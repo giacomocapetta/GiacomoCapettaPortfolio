@@ -756,7 +756,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: %;
+        padding: 0%;
         margin: 10px;
         max-width: 40%;
         height: auto;
