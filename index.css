@@ -29,7 +29,13 @@ html {
     padding: 0;
     margin: 0;
 }
-
+/* Stile dell'intestazione */
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Stile del body */
 body {
 
@@ -40,8 +46,8 @@ body {
 }
 
 .logo {
-    position: absolute;
-    left: 5%;
+    
+    margin-right: 50%;
     max-width: 40px;
     height: auto;
     cursor: pointer;
@@ -63,13 +69,7 @@ button {
     text-decoration: none;
 }
 
-/* Stile dell'intestazione */
-header {
-    background-color: transparent;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 
 /* Stile dei link nella barra di navigazione */
 .navlinks li {
@@ -78,26 +78,6 @@ header {
     align-items: center;
 }
 
-/* Stile del pulsante */
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: firebrick;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    border: none;
-    z-index: 999;
-    border-radius: 45px;
-    border: 2px solid black;
-    box-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
-}
-
-/* Effetto di ombra al passaggio del mouse sul pulsante */
-button:hover {
-    box-shadow: 1px 1px 5px black;
-
-}
 
 /* Stile della barra laterale */
 .sidebar {
@@ -157,7 +137,7 @@ nav ion-icon {
     .navlinks .items {
         display: none;
     }
-
+/* Media query per schermi molto stretti 
     .logo {
         position: absolute;
         left: 5%;
@@ -165,6 +145,7 @@ nav ion-icon {
         height: auto;
         cursor: pointer;
     }
+        */
 }
 
 /* Stile del contenitore */
