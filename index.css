@@ -29,7 +29,6 @@ html {
     padding: 0;
     margin: 0;
 }
-<<<<<<< HEAD
 header {
     background-color: transparent;
     display: flex;
@@ -38,15 +37,6 @@ header {
     margin: 3% 5%;
 }
 
-=======
-/* Stile dell'intestazione */
-header {
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
->>>>>>> babe562b4bccc16c628dd2e3e66de2a01166c751
 /* Stile del body */
 body {
 
@@ -57,14 +47,8 @@ body {
 }
 
 .logo {
-<<<<<<< HEAD
 
     max-width: 3%;
-=======
-    
-    margin-right: 50%;
-    max-width: 40px;
->>>>>>> babe562b4bccc16c628dd2e3e66de2a01166c751
     height: auto;
     cursor: pointer;
 }
@@ -91,10 +75,7 @@ a{
     align-items: center;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> babe562b4bccc16c628dd2e3e66de2a01166c751
 
 /* Stile della barra laterale */
 .sidebar {
@@ -152,19 +133,7 @@ nav ion-icon {
     .navlinks .items {
         display: none;
     }
-<<<<<<< HEAD
 
-=======
-/* Media query per schermi molto stretti 
-    .logo {
-        position: absolute;
-        left: 5%;
-        max-width: 20px;
-        height: auto;
-        cursor: pointer;
-    }
-        */
->>>>>>> babe562b4bccc16c628dd2e3e66de2a01166c751
 }
 
 /* Stile del contenitore */
