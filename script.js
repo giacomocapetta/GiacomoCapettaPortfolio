@@ -109,3 +109,89 @@ function closeSidebar() {
     // Esponi la funzione setCurrentSlide al contesto globale per i punti di navigazione
     window.setCurrentSlide = setCurrentSlide;
     window.flipCard = flipCard; // Esponi la funzione flipCard al contesto globale per i pulsanti Flip
+    document.addEventListener('DOMContentLoaded', (event) => {
+        let slider = document.querySelector('.slider');
+        let sliderItems = document.querySelectorAll('.progetti');
+        let currentIndex = 0;
+        let isDragging = false;
+        let startPos = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationID;
+        let currentSlide = 0;
+    
+        const touchStart = (index) => {
+            return function(event) {
+                currentIndex = index;
+                startPos = getPositionX(event);
+                isDragging = true;
+                animationID = requestAnimationFrame(animation);
+                slider.classList.add('grabbing');
+            }
+        }
+    
+        const touchMove = (event) => {
+            if (isDragging) {
+                const currentPosition = getPositionX(event);
+                currentTranslate = prevTranslate + currentPosition - startPos;
+            }
+        }
+    
+        const touchEnd = () => {
+            isDragging = false;
+            cancelAnimationFrame(animationID);
+            const movedBy = currentTranslate - prevTranslate;
+    
+            if (movedBy < -100 && currentIndex < sliderItems.length - 1) {
+                currentIndex += 1;
+            }
+    
+            if (movedBy > 100 && currentIndex > 0) {
+                currentIndex -= 1;
+            }
+    
+            setPositionByIndex();
+    
+            slider.classList.remove('grabbing');
+        }
+    
+        const getPositionX = (event) => {
+            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+        }
+    
+        const animation = () => {
+            setSliderPosition();
+            if (isDragging) {
+                requestAnimationFrame(animation);
+            }
+        }
+    
+        const setSliderPosition = () => {
+            slider.style.transform = `translateX(${currentTranslate}px)`;
+        }
+    
+        const setPositionByIndex = () => {
+            currentTranslate = currentIndex * -window.innerWidth;
+            prevTranslate = currentTranslate;
+            setSliderPosition();
+        }
+    
+        sliderItems.forEach((slide, index) => {
+            const slideImage = slide.querySelector('img');
+            slideImage.addEventListener('dragstart', (e) => e.preventDefault());
+    
+            // Touch events
+            slide.addEventListener('touchstart', touchStart(index));
+            slide.addEventListener('touchend', touchEnd);
+            slide.addEventListener('touchmove', touchMove);
+    
+            // Mouse events (for testing on desktop)
+            slide.addEventListener('mousedown', touchStart(index));
+            slide.addEventListener('mouseup', touchEnd);
+            slide.addEventListener('mouseleave', touchEnd);
+            slide.addEventListener('mousemove', touchMove);
+        });
+    
+        window.addEventListener('resize', setPositionByIndex);
+    });
+    
