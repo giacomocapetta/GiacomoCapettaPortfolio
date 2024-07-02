@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <!-- Meta tags -->
@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <link rel="stylesheet" href="index.css">
     <!-- Collegamento allo script JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -46,13 +46,9 @@
         <!-- Testo dell'hero section -->
         <div id="testo-hero">
             <h2>Ciao! Io sono...</h2>
-
             <h1>Giacomo Capetta</h1>
             <br>
-            <p>Benvenuto nel mio portfolio! Qui troverai una collezione di lavori creativi che
-                riflettono la mia passione per il design e la grafica. Ogni progetto è una storia visiva unica,
-                caratterizzata da un mix di colori accattivanti, layout dinamici e un'estetica fresca. Esplora le mie
-                creazioni e lasciati ispirare dalla mia visione del design!</p>
+            <p>Benvenuto nel mio portfolio! Qui troverai una collezione di lavori creativi che riflettono la mia passione per il design e la grafica. Ogni progetto è una storia visiva unica, caratterizzata da un mix di colori accattivanti, layout dinamici e un'estetica fresca. Esplora le mie creazioni e lasciati ispirare dalla mia visione del design!</p>
         </div>
     </div>
     <!-- Sezione "Chi sono" -->
@@ -77,12 +73,9 @@
         <div id="testo-chi-sono">
             <h1>Chi sono</h1>
             <p>
-                Mi sono avvicinato da piccolo al mondo della fotografia grazie a lei sono entrato in un mondo che ho
-                scoperto poi essere una PASSIONE.
-                Ho studiato GRAFICA E COMUNICAZIONE alle scuole superiori e sto continuando ancora oggi i miei studi in
-                ACCADEMIA.
-                Ho cercato qui di fare un piccolo recap delle mie capacità sui software
-                al quale sono più appassionato.
+                Mi sono avvicinato da piccolo al mondo della fotografia grazie a lei sono entrato in un mondo che ho scoperto poi essere una PASSIONE.
+                Ho studiato GRAFICA E COMUNICAZIONE alle scuole superiori e sto continuando ancora oggi i miei studi in ACCADEMIA.
+                Ho cercato qui di fare un piccolo recap delle mie capacità sui software al quale sono più appassionato.
             </p>
             <!-- Elenco dei software -->
             <div id="rect-blu">
@@ -122,111 +115,83 @@
     <div class="element" id="progetti">
         <h1>Progetti</h1>
     </div>
-    <div id="sezioneprogetti">
-        <div class="progetti">
-            <div class="inner">
-                <div class="testo-progetti">
-                    <h1>SUPERCAR:</h1>
-
-                    <h3>i miti della storia</h3>
-                    <br>
-                    <p>In questo progetto sono stato invitato a creare una serie di copertine per una collana editoriale
-                        da me
-                        inventata.
-                        Ho deciso quindi di portare all’interno delle mie creazioni la passione per i motori e creare
-                        una
-                        collana dedicata proprio ai migliori marchi di Supercar.</p>
+    <div class="slider-container">
+        <button class="prev">&#10094;</button>
+        <div class="slider">
+            <div class="progetti">
+                <div class="inner">
+                    <div class="testo-progetti">
+                        <h1>SUPERCAR:</h1>
+                        <h3>i miti della storia</h3>
+                        <p>In questo progetto sono stato invitato a creare una serie di copertine per una collana editoriale da me inventata. Ho deciso quindi di portare all’interno delle mie creazioni la passione per i motori e creare una collana dedicata proprio ai migliori marchi di Supercar.</p>
+                    </div>
+                    <div class="img-progetti">
+                        <img src="img/foto-supercar.png" alt="foto-supercar">
+                    </div>
                 </div>
-                <div class="img-progetti">
-                    <img src="img/foto-supercar.png" alt="foto-supercar">
+                <button class="flip-button" onclick="flipCard(this)">Flip</button>
+            </div>
+            <div class="progetti">
+                <div class="inner">
+                    <div class="img-progetti">
+                        <img src="img/vino.png" alt="foto-vino">
+                    </div>
+                    <div class="testo-progetti">
+                        <h1>Etichetta Vino</h1>
+                        <p>In questo progetto ho dovuto realizzare l’etichetta di un vino a mia scelta. Ho deciso quindi di optare per un vino realizzato nella mia regione, il Ruchè. Per la realizzazione ho cercato una fotografia di un vigneto da cui deriva il prodotto, attraverso varie modifiche in Photoshop ho reso l’immagine un disegno che accostata a un font calligrafico cerca un tocco di raffinatezza. Per il nome della cantina, l’anno e la località ho utilizzato un font serif per dare importanza e valore alla cantina.</p>
+                    </div>
                 </div>
+                <button class="flip-button" onclick="flipCard(this)">Flip</button>
+            </div>
+            <div class="progetti">
+                <div class="inner">
+                    <div class="testo-progetti">
+                        <h1>I Simpson</h1>
+                        <h3>Tarocchi</h3>
+                        <p>Per questo lavoro ho dovuto realizzare un mazzo di tarocchi completo, compreso di scatola e libretto di istruzioni. Ho deciso di ridisegnare I SIMPSON, un cartone animato che per me è sempre stato iconico e che per le loro “premonizioni” di cui si parla tanto sul web era secondo me il modo migliore per realizzare proprio un mazzo di tarocchi.</p>
+                    </div>
+                    <div class="img-progetti">
+                        <img src="img/tarocchi.png" alt="foto-tarocchi">
+                    </div>
+                </div>
+                <button class="flip-button" onclick="flipCard(this)">Flip</button>
+            </div>
+            <div class="progetti">
+                <div class="inner">
+                    <div class="img-progetti">
+                        <img src="img/poster-lettura.png" alt="foto-poster">
+                    </div>
+                    <div class="testo-progetti">
+                        <h1>Poster</h1>
+                        <p>In questo progetto mi è stato richiesto di creare un poster a scopo di stampa su di un supporto 70x100cm. Per affrontare questo progetto ho scelto di sviluppare e figurare a mio modo quello che per me è la lettura. Ho unito questo Visual ad un testo impattante e grande che attiri subito lo sguardo e trascini chi osserva anche a leggere la citazione di Pierluigi Cappello, che spiega al meglio il concetto che ho cercato di rappresentare.</p>
+                    </div>
+                </div>
+                <button class="flip-button" onclick="flipCard(this)">Flip</button>
+            </div>
+            <div class="progetti">
+                <div class="inner">
+                    <div class="testo-progetti">
+                        <h1>ACME ADV</h1>
+                        <p>Per questo poster mi è stato chiesto di creare, in 2 ore di tempo, una pubblicità che promuovesse la mia università o il mio percorso al suo interno. Per il visual ho scomposto precedentemente il logo dell’università e nelle due ore di tempo ho unito il tutto nel mondo più casuale ma appagante per me possibile. Con il Copy ho cercato di spiegare ancora meglio cos’è stata per me l’ACME.</p>
+                         </div>
+                    <div class="img-progetti">
+                        <img src="img/acmeadv.png" alt="foto-acme-adv">
+                    </div>
+                </div>
+                <button class="flip-button" onclick="flipCard(this)">Flip</button>
             </div>
         </div>
-        <div class="progetti">
-            <div class="inner">
-                <div class="img-progetti">
-                    <img src="img/vino.png" alt="foto-vino">
-                </div>
-                <div class="testo-progetti">
-                    <h1>Etichetta Vino</h1>
-                    <br>
-                    <p>In questo progetto ho dovuto realizzare l’etichetta di un vino a mia scelta. Ho deciso quindi di
-                        optare per un vino realizzato nella mia regione, il Ruchè.
-                        Per la realizzazione ho cercato una fotografia di un vigneto da cui deriva il prodotto,
-                        attraverso
-                        varie modifiche in Photoshop ho reso l’immagine un disegno che accostata a un font calligrafico
-                        cerca
-                        un tocco di raffinatezza.
-                        Per il nome della cantina, l’anno e la località
-                        ho utilizzato un font serif per
-                        dare importanza e valore alla cantina.
-                </div>
-            </div>
-        </div>
-        <div class="progetti">
-            <div class="inner">
-                <div class="testo-progetti">
-                    <h1>I Simpson</h1>
-
-                    <h3>Tarocchi</h3>
-                    <br>
-                    <p>Per questo lavoro ho dovuto realizzare un mazzo di tarocchi completo, compreso di scatola e
-                        libretto di
-                        istruzioni.
-                        Ho deciso di ridisegnare I SIMPSON, un cartone animato che per me è sempre stato iconico e che
-                        per le
-                        loro “premonizioni” di cui si parla tanto sul web era secondo me il modo migliore per realizzare
-                        proprio
-                        un mazzo di tarocchi.
-                </div>
-                <div class="img-progetti">
-                    <img src="img/tarocchi.png" alt="foto-tarocchi">
-                </div>
-            </div>
-        </div>
-        <div class="progetti">
-            <div class="inner">
-                <div class="img-progetti">
-                    <img src="img/poster-lettura.png" alt="foto-poster">
-                </div>
-                <div class="testo-progetti">
-                    <h1>Poster</h1>
-                    <br>
-                    <p>In questo progetto mi è stato richiesto di creare un poster a scopo di stampa su di un supporto
-                        70x100cm.
-                        Per affrontare questo progetto ho scelto di sviluppare e figurare a mio modo quello che per me è
-                        la
-                        lettura.
-
-                        Ho unito questo Visual ad un testo impattante e grande che attiri subito lo sguardo e trascini
-                        chi
-                        osserva anche a leggere la citazione di Pierluigi Cappello, che spiega al meglio il concetto che
-                        ho
-                        cercato di rappresentare.
-                </div>
-            </div>
-        </div>
-        <div class="progetti">
-            <div class="inner">
-                <div class="testo-progetti">
-                    <h1>ADV Acme</h1>
-
-                    <h3>La mia storia all'ACME</h3>
-                    <br>
-                    <p>Per questo poster mi è stato chiesto di creare, in 2 ore di tempo, una pubblicità che promuovesse
-                        la mia
-                        università o il mio percorso al suo interno.
-                        Per il visual ho scomposto precedentemente il logo dell’università e nelle due ore di tempo ho
-                        unito il
-                        tutto nel mondo più casuale ma appagante per me possibile.
-                        Con il Copy ho cercato di spiegare ancora meglio cos’è stata per me l’ACME.
-                </div>
-                <div class="img-progetti">
-                    <img src="img/acmeadv.png" alt="foto-acmeadv">
-                </div>
-            </div>
+        <button class="next">&#10095;</button>
+        <div class="dots">
+            <span class="dot" onclick="setCurrentSlide(0)"></span>
+            <span class="dot" onclick="setCurrentSlide(1)"></span>
+            <span class="dot" onclick="setCurrentSlide(2)"></span>
+            <span class="dot" onclick="setCurrentSlide(3)"></span>
+            <span class="dot" onclick="setCurrentSlide(4)"></span>
         </div>
     </div>
+    
+   
     <footer>
         <p>© 2024 Giacomo Capetta. Tutti i diritti riservati.</p>
     </footer>
@@ -236,3 +201,4 @@
 </body>
 
 </html>
+                        
