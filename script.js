@@ -90,7 +90,7 @@ function closeSidebar() {
 
     function flipCard(button) {
         console.log('Flipping card'); // Log flip card
-        const card = button.previousElementSibling; // Trova l'elemento .inner precedente
+        const card = button.closest('.inner'); // Trova l'elemento .inner più vicino
         if (card) {
             card.classList.toggle('flipped');
         } else {

@@ -22,6 +22,9 @@ html {
     font-weight: 400;
     font-style: normal;
 }
+button {
+    font-family:'Bricolage Grotesque', sans-serif; ;
+}
 
 /* Reset dei margini e del padding per tutti gli elementi */
 * {
@@ -282,7 +285,8 @@ a{
     display: flex;
     flex-direction: row;
     gap: 100px;
-    width: fit-content;
+    height: auto;
+    width: 90%;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
@@ -296,7 +300,6 @@ a{
 }
 
 .testo-progetti {
-
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -308,6 +311,8 @@ a{
 
 .img-progetti {
     display: flex;
+    flex-direction: column;
+    gap: 0%;
     max-width: 50%;
     height: auto;
     justify-content: center;
@@ -315,8 +320,8 @@ a{
 }
 
 .img-progetti img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
     height: auto;
 }
 
@@ -766,7 +771,6 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
-        
         width: 90%;
         height: 90%;
         perspective: 1000px;
@@ -777,9 +781,8 @@ footer {
         margin: auto;
         position: relative;
         text-align: center;
-        aspect-ratio: 1 / 1;
-        height: 80%;
-        width: 80%;
+        height: 120vw;
+        width: 90%;
         justify-content: center;
         align-items: center;
         background-color: aliceblue;
@@ -793,28 +796,20 @@ footer {
     .testo-progetti {
         text-align: center;
         transform: rotateY(180deg);
-        max-height: 90%;
-        max-width: 90%;
-        height: auto;
-        line-height: normal;
-        font-size: smaller;
-        padding: 5%;
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+            max-height: 98%;
+            height: 100%;
+            width: auto;
+            justify-content: center;
+            align-items: center;
     }
-    .testo-progetti {
-        transform: rotateY(180deg);
-    }
-    .img-progetti img {
-        max-height: 50%;
-        width: auto;
-    }
-
-  
+   
+   
     .flip-button {
         display: flex;
-        margin-top: 5%;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 1%;
+        bottom: 5px;
         position: relative;
         width: fit-content;
         height: fit-content;
@@ -828,13 +823,30 @@ footer {
     }
     .inner.flipped {
         transform: rotateY(180deg);
+    
     }
-
+    .img-progetti {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        max-height: 98%;
+        height: 100%;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .inner button {
+        bottom: 0px;
+        position: absolute;
+        backface-visibility: hidden;
+    }
     .testo-progetti,
     .img-progetti {
         position: absolute;
         width: 100%;
         backface-visibility: hidden;
+
     }
     .dots {
         text-align: center;
@@ -861,7 +873,7 @@ footer {
         margin-top: -20%;
         width: auto;
         padding: 16px;
-        color: white;
+        color: hsla(32, 97%, 59%, 1) 100%;
         font-weight: bold;
         font-size: 24px;
         transition: 0.6s ease;
