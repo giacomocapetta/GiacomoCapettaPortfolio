@@ -286,14 +286,12 @@ a{
     flex-direction: row;
     gap: 100px;
     height: auto;
-    width: 90%;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
     padding: 2%;
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 2% 7%;
     border-radius: 20px;
     border: 4px solid black;
     box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
@@ -313,15 +311,15 @@ a{
     display: flex;
     flex-direction: column;
     gap: 0%;
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     justify-content: center;
     align-items: center;
 }
 
 .img-progetti img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
     height: auto;
 }
 
@@ -560,7 +558,7 @@ footer {
 
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 20px;
         width: fit-content;
         justify-content: center;
         align-items: center;
@@ -799,11 +797,12 @@ footer {
             display: flex;
             flex-direction: column;
             padding: 1%;
-            max-height: 98%;
+            max-width: 80%;
             height: 100%;
             width: auto;
             justify-content: center;
             align-items: center;
+            font-size: 7pt;
     }
    
    
@@ -829,7 +828,6 @@ footer {
         display: flex;
         flex-direction: column;
         padding: 1%;
-        max-height: 98%;
         height: 100%;
         width: auto;
         justify-content: center;
@@ -837,7 +835,7 @@ footer {
         
     }
     .inner button {
-        bottom: 0px;
+        bottom: 2%;
         position: absolute;
         backface-visibility: hidden;
     }
