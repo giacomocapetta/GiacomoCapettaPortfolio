@@ -61,8 +61,13 @@ a{
     color: rgb(0, 0, 0);
     text-decoration: none;
     white-space: nowrap; /* Text on a single line */
+    list-style: none;
 }
 
+.open-sidebar, 
+.close-sidebar ion-icon {
+    font-size: 24pt;
+}
 
 
 
@@ -74,9 +79,6 @@ a{
     gap: 10%;
     align-items: center;
 }
-
-
-
 /* Stile della barra laterale */
 .sidebar {
     position: fixed;
@@ -87,8 +89,6 @@ a{
     z-index: 999;
     background-color: white;
     display: none;
-    justify-content: flex-start;
-    list-style: none;
     flex-direction: column;
     transition: transform 0.3s ease;
     transform: translateX(100%);
@@ -100,18 +100,8 @@ a{
     margin: 25px;
 }
 
-
-
-/* Stile dell'icona nella barra di navigazione */
-nav ion-icon {
-    font-size: 2em;
-}
-
-
 /* Media query per schermi larghi */
 @media only screen and (min-width: 830px) {
-
-    /* Nascondi l'icona nella barra di navigazione */
     .navlinks ion-icon {
         display: none;
     }
@@ -119,22 +109,11 @@ nav ion-icon {
 
 /* Media query per schermi stretti */
 @media only screen and (max-width: 830px) {
-
-    /* Nascondi gli elementi nella barra di navigazione */
     .navlinks .items {
         display: none;
     }
 }
 
-/* Media query per schermi molto stretti */
-@media only screen and (max-width: 560px) {
-
-    /* Nascondi gli elementi nella barra di navigazione */
-    .navlinks .items {
-        display: none;
-    }
-
-}
 
 /* Stile del contenitore */
 .container {
@@ -395,7 +374,7 @@ nav ion-icon {
     user-select: none;
     background-color: transparent;
     border: none;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .next {
@@ -421,9 +400,8 @@ footer {
     color: black;
     padding: 2%;
 }
-
+/* Media query per schermi piccoli */
 @media only screen and (max-width: 1200px) {
- 
 
     /* Ridimensionamento del contenitore */
     .container {
@@ -441,6 +419,7 @@ footer {
         padding-right: 5%;
         max-width: 70%;
         height: auto;
+        z-index: -999;
     }
 
     /* Ridimensionamento del testo introduttivo */
@@ -841,7 +820,7 @@ footer {
         height: fit-content;
         padding: 3%;
         color: #ffffff;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 1);
         border: none;
         text-align: center;
         justify-content: center;

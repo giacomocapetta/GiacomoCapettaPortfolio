@@ -1,19 +1,39 @@
-document.addEventListener("DOMContentLoaded", () => {
-    function showSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = 'flex';
-        setTimeout(() => {
-            sidebar.style.transform = 'translateX(0)'; 
-        }, 10);
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    // Aggiungi event listeners dopo che il DOM è stato caricato
+    const openSidebarButton = document.querySelector('nav .navlinks .open-sidebar');
+    const closeSidebarButton = document.querySelector('nav .sidebar .close-sidebar');
 
-    function closeSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.transform = 'translateX(100%)'; 
+    if (openSidebarButton && closeSidebarButton) {
+        openSidebarButton.addEventListener('click', showSidebar);
+        closeSidebarButton.addEventListener('click', closeSidebar);
+    } else {
+        console.error('Sidebar buttons not found');
+    }
+});
+
+function showSidebar() {
+    const sidebar = document.querySelector('nav .sidebar');
+    if (sidebar) {
+        sidebar.style.transform = 'translateX(0)';
+        sidebar.style.display = 'flex';
+    } else {
+        console.error('Sidebar element not found');
+    }
+}
+
+function closeSidebar() {
+    const sidebar = document.querySelector('nav .sidebar');
+    if (sidebar) {
+        sidebar.style.transform = 'translateX(100%)';
         setTimeout(() => {
             sidebar.style.display = 'none';
-        }, 300);
+        }, 300); // Tempo di transizione in millisecondi
+    } else {
+        console.error('Sidebar element not found');
     }
+}
+
+
 
     function smoothScroll(event) {
         event.preventDefault();
@@ -89,4 +109,3 @@ document.addEventListener("DOMContentLoaded", () => {
     // Esponi la funzione setCurrentSlide al contesto globale per i punti di navigazione
     window.setCurrentSlide = setCurrentSlide;
     window.flipCard = flipCard; // Esponi la funzione flipCard al contesto globale per i pulsanti Flip
-});
