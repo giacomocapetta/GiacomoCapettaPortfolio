@@ -395,6 +395,7 @@ nav ion-icon {
     user-select: none;
     background-color: transparent;
     border: none;
+    z-index: 1; 
 }
 
 .next {
