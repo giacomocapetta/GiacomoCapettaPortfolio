@@ -23,7 +23,8 @@ html {
     font-style: normal;
 }
 button {
-    font-family:'Bricolage Grotesque', sans-serif; ;
+    font-family:'Bricolage Grotesque', sans-serif; 
+    
 }
 
 /* Reset dei margini e del padding per tutti gli elementi */
@@ -305,6 +306,7 @@ a{
     align-items: center;
     line-height: 2;
     max-width: 30%;
+    backface-visibility: hidden;
 }
 
 .img-progetti {
@@ -315,6 +317,7 @@ a{
     height: auto;
     justify-content: center;
     align-items: center;
+   
 }
 
 .img-progetti img {
@@ -393,6 +396,7 @@ a{
 /* Mobile styles for flipping card */
 .flip-button {
     display: none;
+    backface-visibility: hidden;
 }
 
 
@@ -582,7 +586,7 @@ footer {
         align-items: center;
         line-height: 2;
         max-width: 90%;
-
+        backface-visibility: hidden;
     }
 
     .img-progetti {
@@ -803,6 +807,7 @@ footer {
             justify-content: center;
             align-items: center;
             font-size: 8pt;
+            
     }
    
    
@@ -819,10 +824,11 @@ footer {
         text-align: center;
         justify-content: center;
         border-radius: 16px;
+        backface-visibility: hidden;
     }
     .inner.flipped {
         transform: rotateY(180deg);
-    
+        
     }
     .img-progetti {
         display: flex;
@@ -832,7 +838,8 @@ footer {
         width: auto;
         justify-content: center;
         align-items: center;
-        
+        -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-transform: translateZ(0); /* Safari specific fix */
     }
     .inner button {
         bottom: 2%;
