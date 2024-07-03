@@ -838,6 +838,8 @@ footer {
         width: auto;
         justify-content: center;
         align-items: center;
+        transform: translateZ(0);
+        backface-visibility: hidden;
         -webkit-backface-visibility: hidden; /* Safari */
     -webkit-transform: translateZ(0); /* Safari specific fix */
     }
