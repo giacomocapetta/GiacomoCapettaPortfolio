@@ -1130,14 +1130,13 @@ body {
     background-color: hsla(32, 97%, 59%, 1);
     color: #000;
     border-radius: 20px;
-    max-width: fit-content;
-    min-width: 40%;
+    max-width: 40%;
     width: 50%; /* Assicura che tre elementi occupino tutta la larghezza del contenitore */
     height: auto; /* L'altezza si adatta automaticamente al contenuto */
     aspect-ratio: 1 / 1;
     margin: 1%;
     padding: 3% 3% 1% 3%;
-    font-size: 3.5vw;
+    font-size: 0.7em;
     flex-shrink: 0;
     
 }
