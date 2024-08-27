@@ -1065,8 +1065,8 @@ body {
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: auto;
+    max-width: 90%;
   }
   
   #caption {
