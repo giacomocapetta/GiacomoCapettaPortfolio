@@ -54,13 +54,11 @@ let currentSlide = 0;
 function showSlide(index) {
     const slides = document.querySelectorAll('.slider .progetti');
     const dots = document.querySelectorAll('.dot');
-    if (index >= slides.length) currentSlide = 0;
-    if (index < 0) currentSlide = slides.length - 1;
+    if (index >= slides.length) index = 0;
+    if (index < 0) index = slides.length - 1;
     currentSlide = index;
-    console.log('Number of slides:', slides.length); // Log numero di slide
-    console.log('Showing slide:', currentSlide); // Log slide corrente
-    document.querySelector('.slider').style.transform = `translateX(-${currentSlide * 100}%)`;
 
+    document.querySelector('.slider').style.transform = `translateX(-${currentSlide * 100}%)`;
     dots.forEach((dot, idx) => {
         dot.className = dot.className.replace(" active", "");
         if (idx === currentSlide) {
@@ -70,35 +68,23 @@ function showSlide(index) {
 }
 
 function nextSlide() {
-    currentSlide++;
-    if (currentSlide >= document.querySelectorAll('.slider .progetti').length) {
-        currentSlide = 0;
-    }
-    console.log('Next slide:', currentSlide); // Log slide successiva
-    showSlide(currentSlide);
+    showSlide(currentSlide + 1);
 }
 
 function prevSlide() {
-    currentSlide--;
-    if (currentSlide < 0) {
-        currentSlide = document.querySelectorAll('.slider .progetti').length - 1;
-    }
-    console.log('Previous slide:', currentSlide); // Log slide precedente
-    showSlide(currentSlide);
+    showSlide(currentSlide - 1);
 }
 
 function setCurrentSlide(index) {
-    console.log('Setting current slide to:', index); // Log impostazione slide corrente
     showSlide(index);
 }
 
 function flipCard(button) {
-    console.log('Flipping card'); // Log flip card
-    const card = button.closest('.inner'); // Trova l'elemento .inner più vicino
+    const card = button.closest('.inner');
     if (card) {
         card.classList.toggle('flipped');
     } else {
-        console.log('Card not found');
+        console.error('Card not found');
     }
 }
 
@@ -145,13 +131,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         cancelAnimationFrame(animationID);
         const movedBy = currentTranslate - prevTranslate;
 
-        if (movedBy < -100 && currentSlide < sliderItems.length - 1) {
-            currentSlide += 1;
-        }
-
-        if (movedBy > 100 && currentSlide > 0) {
-            currentSlide -= 1;
-        }
+        if (movedBy < -100 && currentSlide < sliderItems.length - 1) currentSlide += 1;
+        if (movedBy > 100 && currentSlide > 0) currentSlide -= 1;
 
         setPositionByIndex();
         slider.classList.remove('grabbing');
@@ -176,6 +157,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         currentTranslate = currentSlide * -window.innerWidth;
         prevTranslate = currentTranslate;
         setSliderPosition();
+
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, idx) => {
+            dot.className = 'dot' + (idx === currentSlide ? ' active' : '');
+        });
     };
 
     sliderItems.forEach((slide, index) => {
