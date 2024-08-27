@@ -1116,6 +1116,7 @@ body {
     overflow-x: auto; /* Cambiato a auto per un comportamento migliore */
     margin: auto;
     align-items: center;
+    -webkit-overflow-scrolling: touch; /* Migliora lo scrolling sui dispositivi touch */
     justify-content: flex-start;
     padding: 3%;
 }
