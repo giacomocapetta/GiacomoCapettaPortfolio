@@ -1112,6 +1112,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    overflow-y: hidden;
     overflow-x: auto; /* Cambiato a auto per un comportamento migliore */
     margin: auto;
     align-items: center;
@@ -1129,7 +1130,9 @@ body {
     background-color: hsla(32, 97%, 59%, 1);
     color: #000;
     border-radius: 20px;
-    width: 100%; /* Assicura che tre elementi occupino tutta la larghezza del contenitore */
+    max-width: fit-content;
+    min-width: 40%;
+    width: 50%; /* Assicura che tre elementi occupino tutta la larghezza del contenitore */
     height: auto; /* L'altezza si adatta automaticamente al contenuto */
     aspect-ratio: 1 / 1;
     margin: 1%;
