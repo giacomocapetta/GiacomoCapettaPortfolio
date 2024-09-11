@@ -27,18 +27,19 @@ button {
     
 }
 
-/* Reset dei margini e del padding per tutti gli elementi */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 header {
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 3% 5%;
+}
+
+/* Reset dei margini e del padding per tutti gli elementi */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* Stile del body */
