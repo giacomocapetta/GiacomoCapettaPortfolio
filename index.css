@@ -375,7 +375,6 @@ a{
     cursor: pointer;
     position: absolute;
     top: 50%;
-    margin-top: -10%;
     width: auto;
     padding: 16px;
     color: white;
@@ -460,6 +459,8 @@ a{
     padding: 2%;
     position: relative;
 }
+.contattitext p {
+    font-size: clamp(1rem, 1.4vw, 4rem);}
 .contattitext h2{
     position: absolute;
     top: 10%;
@@ -729,12 +730,12 @@ footer {
         
     }
     .contattitext p {
-        font-size: clamp(.5rem, 1.6vw, 4rem); /* Il testo sarà almeno 1rem, al massimo 4rem, e si adatta con un valore di 2vw */
+        font-size: clamp(.5rem, 1.8vw, 4rem); 
         margin-top: 15%;
         line-height: 1.75;
     }
     .contattitext h2   {
-        font-size: medium;
+        font-size: clamp(1rem, 2.4vw, 4rem);;
     }
     
 }
