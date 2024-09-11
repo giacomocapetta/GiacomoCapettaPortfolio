@@ -428,7 +428,7 @@ a{
     text-align: center;
     gap: 20px;
     color:  aliceblue; 
-    margin: 3%;  
+    margin: 2%;  
 }
 #spiegazione {
     display: flex;
@@ -729,7 +729,7 @@ footer {
         
     }
     .contattitext p {
-        font-size: clamp(.5rem, 1.5vw, 4rem); /* Il testo sarà almeno 1rem, al massimo 4rem, e si adatta con un valore di 2vw */
+        font-size: clamp(.5rem, 1.6vw, 4rem); /* Il testo sarà almeno 1rem, al massimo 4rem, e si adatta con un valore di 2vw */
         margin-top: 15%;
         line-height: 1.75;
     }
