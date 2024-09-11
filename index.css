@@ -726,12 +726,16 @@ footer {
         box-sizing: border-box;
         flex-shrink: 0;
         scroll-snap-align: center;
+        
     }
     .contattitext p {
         font-size: clamp(.5rem, 1.5vw, 4rem); /* Il testo sarà almeno 1rem, al massimo 4rem, e si adatta con un valore di 2vw */
         margin-top: 15%;
+        line-height: 1.75;
     }
-    
+    .contattitext h2   {
+        font-size: medium;
+    }
     
 }
 
