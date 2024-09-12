@@ -81,8 +81,8 @@ a{
     display: flex;
     list-style: none;
     flex-direction: row;
-    gap: 10%;
     align-items: center;
+    gap: 5%;
 }
 /* Stile della barra laterale */
 .sidebar {
@@ -147,9 +147,10 @@ a{
     text-align: center;
     align-items: center;
     line-height: 2;
+    font-size: clamp(1rem, 1.3vw, 4rem);
 }
 #testo-hero h1 {
-    font-size: 400%;
+    font-size: clamp(2rem, 4vw, 8rem);
 }
 
 .element {
@@ -157,7 +158,7 @@ a{
     text-align: center;
     justify-content: center;
     padding: 2%;
-   color: aliceblue;
+    color: aliceblue;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
@@ -532,17 +533,17 @@ footer {
         align-items: center;
         max-width: 90%;
         height: auto;
-        font-size: small;
+        font-size: clamp(1rem, 2vw, 4rem);
         background-color: white;
         border-radius: 20px;
         border: 2px solid black;
         margin-bottom: 20px;
         box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
-
     }
     #testo-hero h1 {
-        font-size: 400%;
+        font-size: clamp(2rem, 6vw, 8rem);
     }
+ 
     
 
     /* Ridimensionamento della sezione "Chi sono" */
@@ -792,7 +793,7 @@ footer {
         box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
     }
     #testo-hero h1 {
-        font-size: 200%;
+        font-size: clamp(2rem, 6vw, 8rem);
     }
     
 
@@ -1158,8 +1159,11 @@ body {
     flex-shrink: 0;
 }
 .contattitext p {
-    font-size: clamp(.5rem, 3vw, 4rem); /* Il testo sarà almeno 1rem, al massimo 4rem, e si adatta con un valore di 2vw */
+    font-size: clamp(.5rem, 3.5vw, 2rem); /* Il testo sarà almeno 1rem, al massimo 4rem, e si adatta con un valore di 2vw */
     margin-top: 15%;
+}
+.contattitext h2   {
+    font-size: clamp(1rem, 3vw, 8rem);
 }
 #contattititolo {
     text-align: center;
@@ -1167,4 +1171,406 @@ body {
     margin: 0;
     font-size: large;
 }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 5%;
+}
+
+/* Reset dei margini e del padding per tutti gli elementi */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Stile del body */
+body {
+    margin: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /* Utilizzo del font Montserrat */
+    background:
+        linear-gradient(0deg, #1a2765 0%, hsla(359, 73%, 39%, 1) 50%, hsla(32, 97%, 59%, 1) 100%);
+}
+
+.logo {
+
+    max-width: 3%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Stile dei link, dei pulsanti e degli elementi li */
+li,
+a{
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    white-space: nowrap; /* Text on a single line */
+    list-style: none;
+}
+
+.open-sidebar, 
+.close-sidebar ion-icon {
+    font-size: 24pt;
+}
+
+
+
+/* Stile dei link nella barra di navigazione */
+.navlinks {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+}
+/* Stile della barra laterale */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 150px;
+    z-index: 999;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+
+/* Stile degli elementi nella barra laterale */
+.sidebar li {
+    width: 100%;
+    margin: 25px;
+}
+
+/* Media query per schermi larghi */
+@media only screen and (min-width: 830px) {
+    .navlinks ion-icon {
+        display: none;
+    }
+}
+
+/* Media query per schermi stretti */
+@media only screen and (max-width: 830px) {
+    .navlinks .items {
+        display: none;
+    }
+}
+
+
+/* Stile del contenitore */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stile dell'immagine principale */
+#io {
+    margin: 0;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 50%;
+    height: auto;
+}
+
+/* Stile del testo introduttivo */
+#testo-hero {
+    justify-content: center;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    line-height: 2;
+    font-size: clamp(.5rem, 1.6vw, 2rem);
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 0%;
+    box-shadow:none;
+}
+
+#testo-hero h1 {
+    font-size: clamp(1rem, 2vw, 5rem);
+}
+
+.element {
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+    padding: 2%;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: fit-content;
+    height: fit-content;
+}
+/* Stile della sezione "Chi sono" */
+#chi-sono {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+}
+
+#testo-chi-sono {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    line-height: 2;
+    padding: 0%;
+}
+
+#testo-chi-sono > p {
+    max-width: 60%;
+    height: auto;
+    font-size: clamp(.5rem, 1.5vw, 2rem);
+}
+
+/* Stile delle informazioni personali */
+#info {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    padding-left: 2%;
+}
+
+/* Stile dell'immagine personale */
+#fotomeme {
+    margin: 0;
+    padding-top: 10%;
+    max-width: 70%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
+/* Stile del testo delle informazioni personali */
+#info p {
+    line-height: 3;
+}
+
+/* Stile della linea verticale */
+.linea-verticale {
+    width: 2px;
+    /* Spessore della linea */
+    height: 700px;
+    /* Altezza della linea */
+    background-color: #000;
+    /* Colore della linea */
+
+    margin-left: 3%;
+    /* Spazio a sinistra della linea */
+    margin-right: 3%;
+}
+
+/* Stile del testo della sezione "Chi sono" */
+
+
+/* Stile del rettangolo blu */
+#rect-blu {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    background-color: black;
+    height: auto;
+    width: fit-content;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+/* Stile dei voti */
+.voti {
+    display: flex;
+    flex-direction: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 30%;
+    height: auto;
+}
+
+/* Stile delle immagini nella lista e delle stelle */
+.img-list {
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.stelle {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Stile del testo della lista */
+.list-text {
+    max-width: 100%;
+    display: flex;
+    color: aliceblue;
+}
+.list-text p{
+    max-width: 100%;
+    
+}.progetti {
+    background-color: transparent;
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+    perspective: 1000px
+}
+
+.inner {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    height: 40vw;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 4px solid black;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+.testo-progetti {
+    text-align: center;
+    transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        max-width: 80%;
+        height: 100%;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 8pt;
+        
+}
+
+
+.flip-button {
+    display: flex;
+    bottom: 5px;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 3%;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 1);
+    border: none;
+    text-align: center;
+    justify-content: center;
+    border-radius: 16px;
+    backface-visibility: hidden;
+}
+.inner.flipped {
+    transform: rotateY(180deg);
+    
+}
+.img-progetti {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+-webkit-transform: translateZ(0); /* Safari specific fix */
+}
+.inner button {
+    bottom: 2%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.testo-progetti,
+.img-progetti {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+
+}
+.dots {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: rgb(252, 157, 49);
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: transparent;
+    border: none;
+}
+.next {
+    right: 5%;
+    border-radius: 20%;
+}
+
+.prev {
+    left: 5%;
+    border-radius: 20%;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 5%;
 }
