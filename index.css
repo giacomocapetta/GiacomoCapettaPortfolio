@@ -1336,7 +1336,7 @@ a{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
     text-align: center;
     align-items: center;
     line-height: 2;
@@ -1344,7 +1344,7 @@ a{
 }
 
 #testo-chi-sono > p {
-    max-width: 60%;
+    max-width: 80%;
     height: auto;
     font-size: clamp(.5rem, 1.5vw, 2rem);
 }
@@ -1354,7 +1354,7 @@ a{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     text-align: center;
     align-items: center;
     padding-left: 2%;
@@ -1407,8 +1407,7 @@ a{
 /* Stile dei voti */
 .voti {
     display: flex;
-    flex-direction: wrap;
-    gap: 5px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -1434,6 +1433,7 @@ a{
     max-width: 100%;
     display: flex;
     color: aliceblue;
+    font-size: clamp(.5rem, .2vw, 1rem);
 }
 .list-text p{
     max-width: 100%;
