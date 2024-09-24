@@ -1,43 +1,34 @@
-# Giacomo Capetta 
+# Giacomo Capetta - Portfolio Online
 
-Benvenuto nel mio portfolio online! Questo sito presenta una raccolta dei miei progetti di graphic design e web designer.
+Benvenuto nel mio portfolio online, dove presento i miei progetti creativi di design e grafica.
 
 ## Descrizione
 
-Il mio portfolio è un luogo dove mostro il mio lavoro, con l'obiettivo di condividere la mia passione per il design e l'arte visiva. Esplora i progetti e scopri il mio approccio creativo.
+Questo portfolio raccoglie il mio lavoro nel campo della grafica e del web design, mostrando le mie competenze nell'ideazione di progetti visivi e nello sviluppo di soluzioni su misura.
 
 ## Accesso al Portfolio
 
-Puoi visitare il mio sito portfolio [qui] https:https://giacomocapetta.netlify.app/
+Visita il portfolio completo [qui](https://giacomocapetta.it).
 
-## Progetti Principali
+## Introduzione ai progetti
 
-### Progetto 1: [Nome del Progetto]
+### Progetto 1: SUPERCAR - I miti della storia
 
-![Progetto 1](link-all'immagine-del-progetto.jpg)
+- **Descrizione:** Ideazione di una serie di copertine per una collana editoriale dedicata alle supercar più iconiche.
+- **Tecnologie:** Adobe Photoshop, Illustrator
 
-Breve descrizione del progetto e del ruolo svolto. Puoi aggiungere qualsiasi dettaglio che ritieni importante.
+### Progetto 2: Etichetta Vino Ruchè
 
-### Progetto 2: [Nome del Progetto]
-
-![Progetto 2](link-all'immagine-del-progetto.jpg)
-
-Breve descrizione del progetto e del ruolo svolto. Puoi aggiungere qualsiasi dettaglio che ritieni importante.
+- **Descrizione:** Design per un’etichetta di vino che celebra i vigneti locali del Piemonte, con un look raffinato.
+- **Tecnologie:** Adobe Illustrator
 
 ## Come Usare il Sito
 
-Il mio sito è progettato per essere intuitivo e facile da navigare. Puoi esplorare i progetti attraverso la barra di navigazione e ottenere ulteriori dettagli cliccando su ciascun progetto.
+Puoi esplorare i progetti attraverso la sezione "Progetti" e approfondire i dettagli di ciascun lavoro.
 
 ## Contatti
 
-Per collaborazioni, domande o feedback, non esitare a contattarmi:
+Per collaborazioni o feedback:
 
-- Email: [giacomo.capetta01@gmail.com]
-- Portfolio: https://giacomocapetta.netlify.app/
-- Instagram: [@giacomocape]
-
-## Licenza
-
-Il contenuto di questo portfolio è soggetto alla [Nome della Licenza]. Consulta il file LICENSE per ulteriori dettagli.
-
-Grazie per aver visitato il mio portfolio!
+- **Email:** [giacomo.capetta01@gmail.com](mailto:giacomo.capetta01@gmail.com)
+- **Telefono:** +39 334 763 5232
